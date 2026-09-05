@@ -16,5 +16,5 @@ Allow: /pages/
 Allow: /*.html$
 Allow: /*.php$
 
-Sitemap: https://103vet.by/sitemap.xml
-Host: 103vet.by
+Sitemap: https://vetminsk.103vet.by/sitemap.xml
+Host: vetminsk.103vet.by
