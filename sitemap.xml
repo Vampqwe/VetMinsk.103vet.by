@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Главная страница -->
   <url>
-    <loc>https://103vet.by/index.php</loc>
+    <loc>https://vetminsk.103vet.by/index.php</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,25 +10,25 @@
   
   <!-- Страницы информации -->
   <url>
-    <loc>https://103vet.by/pages/info/о-центре-доказательной-ветеринарной-терапии-vetmin.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/info/о-центре-доказательной-ветеринарной-терапии-vetmin.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/info/диагностика-хронических-заболеваний-у-собак-и-коше.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/info/диагностика-хронических-заболеваний-у-собак-и-коше.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/info/телемедицина-онлайн-консультация-ветеринарного-тер.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/info/телемедицина-онлайн-консультация-ветеринарного-тер.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/info/частые-вопросы-о-ветеринарной-терапии-в-минске-vet.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/info/частые-вопросы-о-ветеринарной-терапии-в-минске-vet.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -36,19 +36,19 @@
   
   <!-- Страницы заболеваний -->
   <url>
-    <loc>https://103vet.by/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/disease/хбп-у-кошек-это-приговор-правда-о-продолжительност.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/disease/хбп-у-кошек-это-приговор-правда-о-продолжительност.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/disease/экзокринная-недостаточность-поджелудочной-железы-у.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/disease/экзокринная-недостаточность-поджелудочной-железы-у.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -56,7 +56,7 @@
   
   <!-- Страницы симптомов -->
   <url>
-    <loc>https://103vet.by/pages/symptoms/постоянная-жажда-у-собак-и-кошек-причины-и-диагнос.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/symptoms/постоянная-жажда-у-собак-и-кошек-причины-и-диагнос.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -64,67 +64,67 @@
   
   <!-- Блог: Кошки -->
   <url>
-    <loc>https://103vet.by/pages/blog/cat/акромегалия-у-кошки-контроль-инсулинорезистентного.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/акромегалия-у-кошки-контроль-инсулинорезистентного.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/амилоидоз-у-абиссинской-кошки-паллиативная-терапия.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/амилоидоз-у-абиссинской-кошки-паллиативная-терапия.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/гипертиреоз-у-кошки-12-лет-компенсация-за-3-месяца.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/гипертиреоз-у-кошки-12-лет-компенсация-за-3-месяца.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/гкмп-у-британской-кошки-профилактика-тромбоэмболии.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/гкмп-у-британской-кошки-профилактика-тромбоэмболии.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/диабет-у-кота-с-ожирением-ремиссия-через-6-месяцев.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/диабет-у-кота-с-ожирением-ремиссия-через-6-месяцев.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/дкмп-у-мейн-куна-стабилизация-на-3-года-vetminsk10.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/дкмп-у-мейн-куна-стабилизация-на-3-года-vetminsk10.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/липидоз-печени-у-кошки-полное-восстановление-за-8-.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/липидоз-печени-у-кошки-полное-восстановление-за-8-.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/мкб-у-кота-экстренная-помощь-и-полное-восстановлен.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/мкб-у-кота-экстренная-помощь-и-полное-восстановлен.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/поликистоз-почек-у-персидской-кошки-контроль-хбп-v.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/поликистоз-почек-у-персидской-кошки-контроль-хбп-v.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/триадит-у-кошки-комплексное-лечение-за-3-месяца-ve.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/триадит-у-кошки-комплексное-лечение-за-3-месяца-ve.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/cat/хбп-у-кошки-стадии-ii-как-продлили-жизнь-на-3-года.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/cat/хбп-у-кошки-стадии-ii-как-продлили-жизнь-на-3-года.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -132,97 +132,97 @@
   
   <!-- Блог: Собаки -->
   <url>
-    <loc>https://103vet.by/pages/blog/dog/ibd-у-немецкой-овчарки-ремиссия-через-3-месяца-vet.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/ibd-у-немецкой-овчарки-ремиссия-через-3-месяца-vet.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/атопический-дерматит-у-бульдога-контроль-зуда-за-4.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/атопический-дерматит-у-бульдога-контроль-зуда-за-4.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/болезнь-аддисона-у-йорка-диагностика-и-лечение-vet.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/болезнь-аддисона-у-йорка-диагностика-и-лечение-vet.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/гепатит-у-добермана-стабилизация-на-2-года-vetmins.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/гепатит-у-добермана-стабилизация-на-2-года-vetmins.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/гипотиреоз-у-добермана-полное-восстановление-за-4-.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/гипотиреоз-у-добермана-полное-восстановление-за-4-.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/гломерулонефрит-у-шарпея-контроль-протеинурии-vetm.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/гломерулонефрит-у-шарпея-контроль-протеинурии-vetm.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/инсулинома-у-шпица-хирургическое-лечение-vetminsk1.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/инсулинома-у-шпица-хирургическое-лечение-vetminsk1.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/лимфангиэктазия-у-йорка-контроль-протеин-теряющей-.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/лимфангиэктазия-у-йорка-контроль-протеин-теряющей-.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/острая-почечная-недостаточность-у-лабрадора-полное.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/острая-почечная-недостаточность-у-лабрадора-полное.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/панкреатит-у-йорка-полное-восстановление-за-2-неде.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/панкреатит-у-йорка-полное-восстановление-за-2-неде.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/пищевая-аллергия-у-лабрадора-диагностика-и-контрол.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/пищевая-аллергия-у-лабрадора-диагностика-и-контрол.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/портосистемный-шунт-у-йорка-хирургическое-лечение-.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/портосистемный-шунт-у-йорка-хирургическое-лечение-.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/синдром-кушинга-у-бигля-контроль-за-4-месяца-vetmi.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/синдром-кушинга-у-бигля-контроль-за-4-месяца-vetmi.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/хбп-у-собаки-стадии-iii-стабилизация-на-2-года-vet.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/хбп-у-собаки-стадии-iii-стабилизация-на-2-года-vet.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/хроническая-сердечная-недостаточность-у-кавалера-с.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/хроническая-сердечная-недостаточность-у-кавалера-с.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://103vet.by/pages/blog/dog/хронический-гастрит-у-немецкой-овчарки-полное-разр.html</loc>
+    <loc>https://vetminsk.103vet.by/pages/blog/dog/хронический-гастрит-у-немецкой-овчарки-полное-разр.html</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
