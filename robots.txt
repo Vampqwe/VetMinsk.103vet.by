@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /core/
+Disallow: /js/
+Disallow: /style/
+Disallow: /svg/
+Disallow: /*.cmd$
+Disallow: /import.php
+Disallow: /config.php
+Disallow: /functions.php
+Disallow: /header.php
+Disallow: /footer.php
+Disallow: /404.php
+
+Allow: /index.php
+Allow: /pages/
+Allow: /*.html$
+Allow: /*.php$
+
+Sitemap: https://103vet.by/sitemap.xml
+Host: 103vet.by
