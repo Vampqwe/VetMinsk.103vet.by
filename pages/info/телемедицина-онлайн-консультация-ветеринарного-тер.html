@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Телемедицина (Онлайн консультация) ветеринарного терапевта в Беларуси | vetminsk.103vet.by</title>
+<meta name="description" content="Дистанционные консультации ветеринарного терапевта для владельцев собак и кошек. Расшифровка анализов, коррекция лечения, второе мнение — без необходимости ехать в Минск.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --color-bg-primary: #F5F0E8; --color-bg-secondary: #EDE8DF; --color-bg-card: #FFFFFF; --color-teal: #1A8B8C; --color-teal-dark: #146B6C; --color-teal-light: #2AB0B1; --color-teal-deep: #0F5859; --color-accent: #E76F51; --color-accent-warm: #F4A261; --color-accent-deep: #d45a3d; --color-text-primary: #2C3E50; --color-text-secondary: #5D6D7E; --color-text-light: #FFFFFF; --font-serif: 'Playfair Display', serif; --font-sans: 'Inter', sans-serif; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { font-family: var(--font-sans); background: var(--color-bg-primary); color: var(--color-text-primary); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  a { color: var(--color-teal); text-decoration: none; transition: color 0.3s; }
+  a:hover { color: var(--color-teal-dark); }
+  .home-link { display: block; width: 100%; text-align: center; text-decoration: none; padding: 16px 20px; font-family: var(--font-serif); font-size: 18px; font-weight: 700; color: var(--color-text-light); background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; }
+  .home-link:hover { filter: brightness(1.05); color: var(--color-text-light); }
+  .nav { background: rgba(245, 240, 232, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 20px 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; list-style: none; }
+  .nav-inner a { display: inline-block; background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%); color: var(--color-text-light); font-size: 13px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; padding: 12px 22px; border-radius: 100px; text-decoration: none; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 6px 16px rgba(231, 111, 81, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.15); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+  .nav-inner a:hover { transform: translateY(-3px); color: var(--color-text-light); box-shadow: 0 10px 24px rgba(231, 111, 81, 0.5); filter: brightness(1.08); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .hero { background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); padding: 60px 32px; border-radius: 24px; margin-bottom: 48px; text-align: center; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9); }
+  .hero-label { display: inline-block; background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 12px 28px; border-radius: 100px; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; box-shadow: 0 8px 16px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2); }
+  .hero h1 { font-family: var(--font-serif); font-size: clamp(28px, 5vw, 48px); font-weight: 600; line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; color: var(--color-teal-deep); }
+  .hero h1 em { font-style: italic; color: var(--color-teal); }
+  .hero p { font-size: clamp(15px, 1.8vw, 17px); font-weight: 300; line-height: 1.7; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto 24px; }
+  .hero-stat { display: inline-block; font-family: var(--font-serif); font-style: italic; font-size: 16px; color: var(--color-teal); padding: 16px 24px; border-left: 3px solid var(--color-accent); background: var(--color-bg-card); border-radius: 0 16px 16px 0; line-height: 1.5; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); text-align: left; }
+  .section { background: var(--color-bg-card); border-radius: 24px; padding: 48px 40px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9), inset 0 -2px 4px rgba(0, 0, 0, 0.04); transition: transform 0.4s, box-shadow 0.4s; }
+  .section:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(26, 139, 140, 0.12); }
+  .section-label { display: inline-block; background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 100%); color: var(--color-text-light); padding: 8px 20px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(26, 139, 140, 0.25); }
+  .section h2 { font-family: var(--font-serif); font-size: clamp(24px, 3.5vw, 36px); font-weight: 600; line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 16px; color: var(--color-teal-deep); }
+  .section h3 { font-family: var(--font-serif); font-size: 20px; font-weight: 600; margin: 32px 0 16px; color: var(--color-teal-deep); padding-left: 16px; border-left: 3px solid var(--color-accent); }
+  .section p { font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); margin-bottom: 12px; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 28px 0; }
+  .step { background: var(--color-bg-card); border-radius: 20px; padding: 28px 24px; position: relative; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); transition: all 0.4s; border-top: 4px solid var(--color-teal); }
+  .step:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(26, 139, 140, 0.15); }
+  .step-num { font-family: var(--font-serif); font-size: 42px; font-weight: 700; color: var(--color-teal); opacity: 0.25; line-height: 1; margin-bottom: 12px; display: block; }
+  .step h4 { font-family: var(--font-serif); font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--color-teal-deep); line-height: 1.4; }
+  .step p { font-size: 13.5px; line-height: 1.7; color: var(--color-text-secondary); margin: 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0; }
+  .col-card { background: var(--color-bg-card); border-radius: 20px; padding: 32px 24px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9); }
+  .col-card.positive { border-top: 4px solid var(--color-teal); }
+  .col-card.negative { border-top: 4px solid var(--color-accent); }
+  .col-card h4 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; margin-bottom: 16px; color: var(--color-teal-deep); line-height: 1.4; }
+  .col-card ul { list-style: none; padding: 0; margin: 0; }
+  .col-card ul li { padding: 10px 0; border-bottom: 1px solid var(--color-bg-secondary); font-size: 14px; color: var(--color-text-primary); display: flex; align-items: flex-start; gap: 12px; line-height: 1.5; }
+  .col-card ul li:last-child { border-bottom: none; }
+  .col-card.positive ul li::before { content: '✓'; width: 22px; height: 22px; background: linear-gradient(145deg, var(--color-teal-light), var(--color-teal)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; flex-shrink: 0; }
+  .col-card.negative ul li::before { content: '✕'; width: 22px; height: 22px; background: linear-gradient(145deg, var(--color-accent-warm), var(--color-accent)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; flex-shrink: 0; }
+  .cities { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+  .city { background: var(--color-bg-card); padding: 20px 16px; border-radius: 16px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); transition: all 0.3s; }
+  .city:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(26, 139, 140, 0.15); }
+  .city-main { background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); color: var(--color-text-light); }
+  .city h4 { font-family: var(--font-serif); font-size: 17px; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
+  .city p { font-size: 12px; opacity: 0.85; line-height: 1.4; }
+  .advantages { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 28px 0; }
+  .advantage { background: var(--color-bg-card); border-radius: 20px; padding: 28px 24px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); transition: all 0.4s; border-left: 4px solid var(--color-accent); }
+  .advantage:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(231, 111, 81, 0.15); }
+  .advantage h4 { font-family: var(--font-serif); font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--color-teal-deep); line-height: 1.4; }
+  .advantage p { font-size: 14px; line-height: 1.7; color: var(--color-text-secondary); margin: 0; }
+  .faq-item { background: var(--color-bg-card); border-radius: 16px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+  .faq-q { padding: 20px 24px; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--color-teal-deep); transition: background 0.3s; line-height: 1.4; }
+  .faq-q:hover { background: var(--color-bg-secondary); }
+  .faq-q::after { content: '+'; font-size: 24px; font-weight: 300; color: var(--color-teal); transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+  .faq-item.open .faq-q::after { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+  .faq-a-inner { padding: 0 24px 20px; font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); }
+  .faq-item.open .faq-a { max-height: 600px; }
+  .cta { background: linear-gradient(145deg, var(--color-teal-deep) 0%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 48px 32px; border-radius: 24px; text-align: center; margin: 40px 0; box-shadow: 0 12px 32px rgba(15, 88, 89, 0.3); }
+  .cta h3 { font-family: var(--font-serif); font-size: clamp(22px, 3vw, 30px); font-weight: 600; margin-bottom: 12px; color: var(--color-text-light); line-height: 1.3; }
+  .cta p { font-size: 15px; font-weight: 300; margin-bottom: 24px; opacity: 0.92; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; color: var(--color-text-light); }
+  .btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%); color: var(--color-text-light); padding: 18px 36px; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 100px; box-shadow: 0 8px 24px rgba(231, 111, 81, 0.35); transition: all 0.4s; }
+  .btn:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(231, 111, 81, 0.45); color: var(--color-text-light); }
+  footer { background: var(--color-teal-deep); color: var(--color-text-light); padding: 32px 24px; text-align: center; font-size: 13px; margin-top: 48px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  footer a { color: var(--color-accent-warm); }
+  footer p { opacity: 0.8; margin-bottom: 8px; line-height: 1.5; }
+  @media (max-width: 768px) { .home-link { font-size: 16px; padding: 14px 16px; } .nav { padding: 16px 16px; } .nav-inner { gap: 8px; } .nav-inner a { font-size: 12px; padding: 10px 16px; letter-spacing: 0.5px; } .hero { padding: 40px 20px; border-radius: 20px; } .section { padding: 32px 20px; border-radius: 20px; } .section h2 { font-size: 24px; } .section h3 { font-size: 18px; } .two-col { grid-template-columns: 1fr; } .step, .col-card, .advantage { padding: 24px 20px; } .step-num { font-size: 36px; } .cta { padding: 36px 20px; border-radius: 20px; } }
+  @media (max-width: 480px) { .home-link { font-size: 15px; padding: 12px 14px; } .container { padding: 24px 16px; } .hero { padding: 32px 16px; } .hero h1 { font-size: 24px; } .section { padding: 24px 16px; } .section h2 { font-size: 22px; } .nav-inner { gap: 6px; } .nav-inner a { font-size: 11px; padding: 9px 13px; letter-spacing: 0.3px; } .steps, .advantages, .cities { grid-template-columns: 1fr; } .btn { padding: 16px 28px; font-size: 12px; } }
+</style>
+</head>
+<body>
+
+<a href="/" class="home-link">vetminsk.103vet.by</a>
+
+<nav class="nav">
+  <ul class="nav-inner">
+    <li><a href="/">Главная</a></li>
+    <li><a href="#process">Процесс</a></li>
+    <li><a href="#showings">Показания</a></li>
+    <li><a href="#geography">География</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <section class="hero">
+    <span class="hero-label">Телемедицина</span>
+    <h1>Онлайн консультация <em>ветеринарного терапевта</em></h1>
+    <p>Дистанционные консультации ветеринарного терапевта для владельцев собак и кошек. Расшифровка анализов, коррекция лечения, второе мнение — без необходимости ехать в Минск.</p>
+    <span class="hero-stat">
+      <strong style="color: var(--color-accent); display: block; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px;">Факт:</strong>
+      85% вопросов по хроническим заболеваниям можно решить онлайн без очного визита
+    </span>
+  </section>
+
+  <section class="section" id="process">
+    <span class="section-label">Процесс</span>
+    <h2>Как работает телемедицина</h2>
+    <p>Простой и удобный процесс получения консультации ветеринарного терапевта</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h4>Запись на консультацию</h4>
+        <p>Заполните форму на сайте или позвоните. Укажите симптомы, диагноз (если есть), перечень имеющихся анализов.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h4>Подготовка материалов</h4>
+        <p>Сфотографируйте или отсканируйте результаты анализов, УЗИ, выписки. Запишите видео с симптомами питомца (если есть).</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h4>Онлайн консультация</h4>
+        <p>Врач изучает материалы, задаёт уточняющие вопросы, ставит предварительный диагноз или корректирует лечение.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <h4>Письменное заключение</h4>
+        <p>Вы получаете подробное заключение с рекомендациями, схемой лечения и планом контрольных обследований.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="showings">
+    <span class="section-label">Показания</span>
+    <h2>Когда нужна телемедицина</h2>
+    <p>Телемедицина эффективна для решения большинства вопросов по хроническим заболеваниям</p>
+
+    <div class="two-col">
+      <div class="col-card positive">
+        <h4>Когда телемедицина эффективна</h4>
+        <ul>
+          <li>Расшифровка результатов анализов крови, мочи, УЗИ</li>
+          <li>Коррекция дозировок препаратов при диабете, ХБП, гипертиреозе</li>
+          <li>Второе мнение по поставленному диагнозу и схеме лечения</li>
+          <li>Интерпретация симптомов хронического заболевания</li>
+          <li>Подбор диеты при хронических заболеваниях</li>
+          <li>Контроль динамики заболевания по результатам анализов</li>
+          <li>Консультация по уходу за питомцем с хроническим заболеванием</li>
+          <li>Решение вопросов по телемедицине для регионов Беларуси</li>
+        </ul>
+      </div>
+      <div class="col-card negative">
+        <h4>Когда нужен очный приём</h4>
+        <ul>
+          <li>Первичная диагностика без каких-либо обследований</li>
+          <li>Острые состояния: рвота, отказ от еды, резкое ухудшение</li>
+          <li>Необходимость пальпации, аускультации, забора анализов</li>
+          <li>Проведение УЗИ, рентгена, ЭКГ</li>
+          <li>Хирургические вмешательства</li>
+          <li>Вакцинация и стерилизация</li>
+          <li>Неотложная помощь при травмах, отравлениях</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="geography">
+    <span class="section-label">География</span>
+    <h2>Телемедицина для всей Беларуси</h2>
+    <p>Мы работаем с владельцами собак и кошек из всех регионов Беларуси</p>
+
+    <div class="cities">
+      <div class="city city-main">
+        <h4>Минск</h4>
+        <p>Очный приём + телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Брест</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Гомель</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Могилёв</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Витебск</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Гродно</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Барановичи</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Бобруйск</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Орша</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Молодечно</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Пинск</h4>
+        <p>Телемедицина</p>
+      </div>
+      <div class="city">
+        <h4>Солигорск</h4>
+        <p>Телемедицина</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Преимущества</span>
+    <h2>Почему выбирают телемедицину</h2>
+    <p>Почему владельцы хронических пациентов выбирают телемедицину</p>
+
+    <div class="advantages">
+      <div class="advantage">
+        <h4>Экономия времени</h4>
+        <p>Не нужно ехать в Минск, стоять в пробках, ждать в очереди. Консультация в удобное время из дома.</p>
+      </div>
+      <div class="advantage">
+        <h4>Доступ к экспертизе</h4>
+        <p>Получите консультацию специалиста по хроническим заболеваниям, даже если в вашем городе нет такого врача.</p>
+      </div>
+      <div class="advantage">
+        <h4>Комфорт для питомца</h4>
+        <p>Никакого стресса от поездки в клинику. Питомец остаётся в привычной обстановке.</p>
+      </div>
+      <div class="advantage">
+        <h4>Быстрое решение</h4>
+        <p>Большинство вопросов решается в течение 1-2 дней. Экстренные консультации — в день обращения.</p>
+      </div>
+      <div class="advantage">
+        <h4>Письменное заключение</h4>
+        <p>Вы получаете подробные рекомендации в письменном виде, которые можно использовать в любой клинике.</p>
+      </div>
+      <div class="advantage">
+        <h4>Контроль динамики</h4>
+        <p>Регулярные онлайн-консультации для мониторинга хронического заболевания без частых поездок.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <span class="section-label">Вопросы</span>
+    <h2>Частые вопросы о телемедицине</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Как проходит онлайн консультация?</div>
+      <div class="faq-a"><div class="faq-a-inner">Консультация проходит по телефону или в мессенджере (WhatsApp, Viber, Telegram). Вы присылаете фото/сканы анализов, видео с симптомами. Врач задаёт вопросы, изучает материалы, даёт рекомендации. Длительность: 30-60 минут. После консультации вы получаете письменное заключение.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Какие анализы нужно иметь для консультации?</div>
+      <div class="faq-a"><div class="faq-a-inner">Минимальный набор: общий и биохимический анализ крови, анализ мочи (сданные в течение последних 2-4 недель). Желательно: УЗИ брюшной полости, гормональные тесты (Т4, фруктозамин), дневник наблюдения. Чем больше материалов — тем точнее консультация.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Сколько стоит телемедицинская консультация?</div>
+      <div class="faq-a"><div class="faq-a-inner">Стоимость зависит от сложности случая и объёма материалов. Базовая консультация (расшифровка анализов) — от 80 BYN. Расширенная консультация (второе мнение, коррекция лечения) — от 120 BYN. Точную стоимость уточняйте при записи.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Как быстро я получу консультацию?</div>
+      <div class="faq-a"><div class="faq-a-inner">Плановые консультации проводятся в течение 1-2 рабочих дней после получения материалов. Срочные консультации (по жизненным показаниям) — в день обращения. Точное время согласовывается при записи.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Можно ли получить рецепт на препараты онлайн?</div>
+      <div class="faq-a"><div class="faq-a-inner">Врач даёт письменные рекомендации с указанием препаратов, дозировок и схемы приёма. Эти рекомендации можно использовать в любой аптеке или клинике Беларуси. Однако для назначения рецептурных препаратов может потребоваться очный визит.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Что если после консультации состояние ухудшится?</div>
+      <div class="faq-a"><div class="faq-a-inner">В письменном заключении всегда указываются "красные флаги" — симптомы, при которых нужно срочно обратиться в клинику. При ухудшении состояния мы рекомендуем очный визит к ветеринару по месту жительства или в нашу клинику в Минске.</div></div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h3>Нужна телемедицинская консультация?</h3>
+    <p>Запишитесь на дистанционную консультацию ветеринарного терапевта — получите экспертное мнение, не выезжая из своего города</p>
+    <a href="https://103vet.by/" class="btn">Записаться на консультацию</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>vetminsk.103vet.by · Специализированный терапевтический проект <a href="https://103vet.by/">103vet.by</a></p>
+  <p>© 2026 · Доказательная ветеринарная медицина</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>

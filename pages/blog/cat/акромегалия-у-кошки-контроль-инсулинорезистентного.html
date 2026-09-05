@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Акромегалия у кошки: контроль инсулинорезистентного диабета | vetminsk.103vet.by</title>
+<meta name="description" content="Кейс: кот 10 лет, акромегалия из-за макроаденомы гипофиза. Тяжёлый инсулинорезистентный диабет, вторичная гипертрофическая кардиомиопатия. Лучевая терапия опухоли.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-bg-primary: #F5F0E8;
+    --color-bg-secondary: #EDE8DF;
+    --color-bg-card: #FFFFFF;
+    --color-teal: #1A8B8C;
+    --color-teal-dark: #146B6C;
+    --color-teal-light: #2AB0B1;
+    --color-teal-deep: #0F5859;
+    --color-accent: #E76F51;
+    --color-accent-warm: #F4A261;
+    --color-accent-deep: #d45a3d;
+    --color-text-primary: #2C3E50;
+    --color-text-secondary: #5D6D7E;
+    --color-text-light: #FFFFFF;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-sans); background: var(--color-bg-primary);
+    color: var(--color-text-primary); line-height: 1.6; overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--color-teal); text-decoration: none; transition: color 0.3s; }
+  a:hover { color: var(--color-teal-dark); }
+
+  .home-link {
+    display: block; width: 100%; text-align: center; text-decoration: none;
+    padding: 16px 20px; font-family: var(--font-serif); font-size: 18px; font-weight: 700;
+    color: var(--color-text-light);
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%);
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .home-link:hover { filter: brightness(1.05); color: var(--color-text-light); }
+
+  .nav {
+    background: rgba(245, 240, 232, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    padding: 20px 24px; position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap;
+    gap: 10px; justify-content: center; list-style: none;
+  }
+  .nav-inner a {
+    display: inline-block;
+    background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%);
+    color: var(--color-text-light); font-size: 13px; font-weight: 600; letter-spacing: 0.8px;
+    text-transform: uppercase; padding: 12px 22px; border-radius: 100px; text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 6px 16px rgba(231, 111, 81, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+  .nav-inner a:hover {
+    transform: translateY(-3px); color: var(--color-text-light);
+    box-shadow: 0 10px 24px rgba(231, 111, 81, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.08);
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+
+  .hero {
+    background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+    padding: 60px 32px; border-radius: 24px; margin-bottom: 48px; text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  }
+  .hero-label {
+    display: inline-block;
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%);
+    color: var(--color-text-light); padding: 12px 28px; border-radius: 100px;
+    font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px;
+    box-shadow: 0 8px 16px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .hero h1 {
+    font-family: var(--font-serif); font-size: clamp(28px, 5vw, 44px); font-weight: 600;
+    line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; color: var(--color-teal-deep);
+  }
+  .hero h1 em { font-style: italic; color: var(--color-teal); }
+  .hero p {
+    font-size: clamp(15px, 1.8vw, 17px); font-weight: 300; line-height: 1.7;
+    color: var(--color-text-secondary); max-width: 800px; margin: 0 auto 24px;
+  }
+  .hero-result {
+    display: inline-block; font-family: var(--font-serif); font-style: italic; font-size: 16px;
+    color: var(--color-teal); padding: 16px 24px; border-left: 3px solid var(--color-accent);
+    background: var(--color-bg-card); border-radius: 0 16px 16px 0; line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); text-align: left;
+  }
+
+  .section {
+    background: var(--color-bg-card); border-radius: 24px; padding: 48px 40px; margin-bottom: 32px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9), inset 0 -2px 4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  .section:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(26, 139, 140, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.9); }
+  .section-label {
+    display: inline-block;
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 100%);
+    color: var(--color-text-light); padding: 8px 20px; border-radius: 100px;
+    font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(26, 139, 140, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+  }
+  .section h2 {
+    font-family: var(--font-serif); font-size: clamp(24px, 3.5vw, 36px); font-weight: 600;
+    line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 16px; color: var(--color-teal-deep);
+  }
+  .section h3 {
+    font-family: var(--font-serif); font-size: 20px; font-weight: 600; margin: 32px 0 16px;
+    color: var(--color-teal-deep); padding-left: 16px; border-left: 3px solid var(--color-accent);
+  }
+  .section p { font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); margin-bottom: 12px; }
+
+  .patient-card {
+    background: linear-gradient(145deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+    border-radius: 20px; padding: 32px; margin: 24px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9);
+    border-left: 4px solid var(--color-accent);
+  }
+  .patient-card h4 {
+    font-family: var(--font-serif); font-size: 18px; font-weight: 600;
+    color: var(--color-teal-deep); margin-bottom: 20px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .patient-card h4::before { content: '🐱'; font-size: 28px; }
+  .patient-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+  .patient-info-item {
+    background: var(--color-bg-card); padding: 16px; border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  }
+  .patient-info-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--color-text-secondary); margin-bottom: 6px;
+  }
+  .patient-info-value {
+    font-family: var(--font-serif); font-size: 17px; font-weight: 600; color: var(--color-teal-deep);
+  }
+
+  .diagnosis-list {
+    background: var(--color-bg-primary); border-radius: 16px; padding: 24px; margin: 20px 0;
+  }
+  .diagnosis-list ul { list-style: none; }
+  .diagnosis-list li {
+    padding: 14px 0; border-bottom: 1px solid var(--color-bg-secondary);
+    font-size: 14px; line-height: 1.6; color: var(--color-text-primary);
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .diagnosis-list li:last-child { border-bottom: none; }
+  .diagnosis-list li::before {
+    content: ''; width: 8px; height: 8px;
+    background: linear-gradient(145deg, var(--color-accent-warm), var(--color-accent));
+    border-radius: 50%; margin-top: 8px; flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(231, 111, 81, 0.3);
+  }
+  .diagnosis-list li strong { color: var(--color-teal-deep); }
+
+  .diagnosis-box {
+    background: linear-gradient(145deg, var(--color-teal-deep) 0%, var(--color-teal-dark) 100%);
+    color: var(--color-text-light); padding: 28px; border-radius: 20px; margin: 24px 0;
+    box-shadow: 0 8px 24px rgba(15, 88, 89, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  .diagnosis-box strong {
+    display: block; font-family: var(--font-serif); font-size: 14px;
+    letter-spacing: 2px; text-transform: uppercase; color: var(--color-accent-warm); margin-bottom: 12px;
+  }
+  .diagnosis-box p { color: var(--color-text-light); font-size: 15px; line-height: 1.7; margin: 0; }
+
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 28px 0; }
+  .step {
+    background: var(--color-bg-card); border-radius: 20px; padding: 28px 24px; position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9), inset 0 -2px 4px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s; border-top: 4px solid var(--color-teal);
+  }
+  .step:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(26, 139, 140, 0.15), inset 0 2px 4px rgba(255, 255, 255, 0.9); }
+  .step-num {
+    font-family: var(--font-serif); font-size: 42px; font-weight: 700;
+    color: var(--color-teal); opacity: 0.25; line-height: 1; margin-bottom: 12px; display: block;
+  }
+  .step h4 {
+    font-family: var(--font-serif); font-size: 17px; font-weight: 600;
+    margin-bottom: 10px; color: var(--color-teal-deep); line-height: 1.4;
+  }
+  .step p { font-size: 13.5px; line-height: 1.7; color: var(--color-text-secondary); margin: 0; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+  .stat {
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%);
+    color: var(--color-text-light); padding: 24px 20px; border-radius: 20px; text-align: center;
+    box-shadow: 0 8px 24px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+  }
+  .stat:hover { transform: translateY(-4px); }
+  .stat-num {
+    font-family: var(--font-serif); font-size: 26px; font-weight: 700;
+    display: block; margin-bottom: 8px; line-height: 1.1;
+  }
+  .stat-label { font-size: 12.5px; opacity: 0.92; line-height: 1.5; }
+
+  .conclusions { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 24px 0; }
+  .conclusion-item {
+    background: var(--color-bg-primary); padding: 20px 24px; border-radius: 16px;
+    border-left: 3px solid var(--color-accent); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .conclusion-item h4 {
+    font-family: var(--font-serif); font-size: 15px; font-weight: 600;
+    color: var(--color-teal-deep); margin-bottom: 8px; line-height: 1.4;
+  }
+  .conclusion-item p { font-size: 13.5px; line-height: 1.6; color: var(--color-text-secondary); margin: 0; }
+
+  .warning-block {
+    background: linear-gradient(145deg, #fff5f0 0%, #ffe8dd 100%);
+    border-left: 4px solid var(--color-accent); padding: 24px 28px;
+    border-radius: 0 16px 16px 0; margin: 28px 0;
+    box-shadow: 0 4px 12px rgba(231, 111, 81, 0.1);
+  }
+  .warning-block strong {
+    display: block; font-family: var(--font-serif); font-size: 16px;
+    color: var(--color-accent-deep); margin-bottom: 10px;
+  }
+  .warning-block p { font-size: 14px; line-height: 1.7; color: var(--color-text-primary); margin: 0; }
+
+  .cta {
+    background: linear-gradient(145deg, var(--color-teal-deep) 0%, var(--color-teal-dark) 100%);
+    color: var(--color-text-light); padding: 48px 32px; border-radius: 24px; text-align: center; margin: 40px 0;
+    box-shadow: 0 12px 32px rgba(15, 88, 89, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  .cta h3 {
+    font-family: var(--font-serif); font-size: clamp(22px, 3vw, 30px); font-weight: 600;
+    margin-bottom: 12px; color: var(--color-text-light); line-height: 1.3;
+  }
+  .cta p {
+    font-size: 15px; font-weight: 300; margin-bottom: 24px; opacity: 0.92;
+    max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; color: var(--color-text-light);
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%);
+    color: var(--color-text-light); padding: 18px 36px; font-size: 13px; font-weight: 600;
+    letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 100px;
+    box-shadow: 0 8px 24px rgba(231, 111, 81, 0.35), inset 0 3px 6px rgba(255, 255, 255, 0.4), inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+  }
+  .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(231, 111, 81, 0.45), inset 0 3px 6px rgba(255, 255, 255, 0.4);
+    color: var(--color-text-light);
+  }
+
+  footer {
+    background: var(--color-teal-deep); color: var(--color-text-light);
+    padding: 32px 24px; text-align: center; font-size: 13px; margin-top: 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  footer a { color: var(--color-accent-warm); }
+  footer a:hover { color: var(--color-accent); }
+  footer p { opacity: 0.8; margin-bottom: 8px; line-height: 1.5; }
+
+  @media (max-width: 768px) {
+    .home-link { font-size: 16px; padding: 14px 16px; }
+    .nav { padding: 16px 16px; }
+    .nav-inner { gap: 8px; }
+    .nav-inner a { font-size: 12px; padding: 10px 16px; letter-spacing: 0.5px; }
+    .hero { padding: 40px 20px; border-radius: 20px; }
+    .section { padding: 32px 20px; border-radius: 20px; }
+    .section h2 { font-size: 24px; }
+    .section h3 { font-size: 18px; }
+    .stat-num { font-size: 22px; }
+    .step { padding: 22px 18px; }
+    .step-num { font-size: 36px; }
+    .cta { padding: 36px 20px; border-radius: 20px; }
+    .patient-info { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .home-link { font-size: 15px; padding: 12px 14px; }
+    .container { padding: 24px 16px; }
+    .hero { padding: 32px 16px; }
+    .hero h1 { font-size: 24px; }
+    .section { padding: 24px 16px; }
+    .section h2 { font-size: 22px; }
+    .nav-inner { gap: 6px; }
+    .nav-inner a { font-size: 11px; padding: 9px 13px; letter-spacing: 0.3px; }
+    .steps { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .conclusions { grid-template-columns: 1fr; }
+    .patient-info { grid-template-columns: 1fr; }
+    .btn { padding: 16px 28px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<a href="/" class="home-link">vetminsk.103vet.by</a>
+
+<nav class="nav">
+  <ul class="nav-inner">
+    <li><a href="/">Главная</a></li>
+    <li><a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#diabet">К разделу</a></li>
+    <li><a href="https://103vet.by/">Записаться</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <section class="hero">
+    <span class="hero-label">Кейс из практики · Эндокринология</span>
+    <h1>Акромегалия у кошки: <em>контроль инсулинорезистентного диабета</em></h1>
+    <p>История пациента: кот 10 лет, акромегалия (гиперсоматотропизм) из-за макроаденомы гипофиза. Тяжёлый инсулинорезистентный диабет, вторичная гипертрофическая кардиомиопатия. Лучевая терапия опухоли.</p>
+    <span class="hero-result">
+      <strong style="color: var(--color-accent); display: block; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px;">Результат:</strong>
+      Доза инсулина снижена с 12 до 3 Ед, опухоль гипофиза уменьшилась на 40%, сердечная недостаточность стабилизирована
+    </span>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Пациент</span>
+    <h2>История обращения</h2>
+
+    <div class="patient-card">
+      <h4>Том</h4>
+      <div class="patient-info">
+        <div class="patient-info-item">
+          <div class="patient-info-label">Порода</div>
+          <div class="patient-info-value">Метис</div>
+        </div>
+        <div class="patient-info-item">
+          <div class="patient-info-label">Возраст</div>
+          <div class="patient-info-value">10 лет</div>
+        </div>
+        <div class="patient-info-item">
+          <div class="patient-info-label">Вес</div>
+          <div class="patient-info-value">8.5 кг <span style="font-size: 13px; color: var(--color-text-secondary); font-family: var(--font-sans);">(прибавка 2 кг за год)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p>Владельцы обратились с жалобами на <strong style="color: var(--color-teal-deep);">неконтролируемый сахарный диабет</strong>. Тому поставили диагноз "диабет" 8 месяцев назад. Несмотря на огромные дозы инсулина (Левемир 12 Ед 2 раза в день, что составляет 1.4 Ед/кг — норма 0.25-0.5 Ед/кг), глюкоза крови стабильно держится на уровне 18-25 ммоль/л. Фруктозамин &gt;600 мкмоль/л.</p>
+
+    <p>Дополнительные симптомы: <strong style="color: var(--color-accent);">прибавка веса на 2 кг за последний год</strong> (парадоксально для диабета!), увеличение размеров головы и лап (владельцы отметили, что "морда стала шире"), громкий храп и стридор (разрастание мягких тканей глотки), одышка при нагрузке. Владельцы кормят Тома диабетическим кормом, колют инсулин строго по графику, но эффекта нет.</p>
+
+    <p>При сборе анамнеза выяснилось: Том кастрирован в 1 год. Ранее получал мегестрола ацетат (Овариовит) для коррекции поведения 2 года назад (фактор риска диабета, но отменён давно). При осмотре: Том крупный, массивный кот с широкой мордой, увеличенными межпальцевыми промежутками. Аускультация: систологический шум 3/6 в области митрального клапана.</p>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Диагностика</span>
+    <h2>Обследование при инсулинорезистентном диабете</h2>
+    <p>Поиск причины резистентности к инсулину с подтверждением акромегалии</p>
+
+    <div class="diagnosis-list">
+      <ul>
+        <li><strong>Глюкоза крови натощак: 22.5 ммоль/л</strong> (норма 3.3-6.1) — тяжёлая гипергликемия</li>
+        <li><strong>Фруктозамин: 650 мкмоль/л</strong> (норма 200-350) — хроническая декомпенсация диабета</li>
+        <li><strong>IGF-1 (Инсулиноподобный фактор роста-1): 1250 нг/мл</strong> (норма для котов 200-800 нг/мл) — значительно повышен! Абсолютный скрининговый маркер акромегалии</li>
+        <li><strong>Общий анализ крови и биохимия:</strong> без значимых патологий, кроме гипергликемии</li>
+        <li><strong>ТТ4: 25 нмоль/л</strong> (норма 10-50) — исключён гипертиреоз (частая причина резистентности)</li>
+        <li><strong>Анализ мочи:</strong> глюкозурия ++++, кетоны -, удельный вес 1.020</li>
+        <li><strong>МРТ головного мозга (с контрастом):</strong> макроаденома гипофиза 14 мм (норма &lt;6 мм) с инвазией в клиновидную кость. Опухоль сдавляет зрительный перекрест (риск слепоты)</li>
+        <li><strong>ЭхоКГ:</strong> concentric hypertrophy левого желудочка (толщина стенки 7.5 мм, норма &lt;5.5 мм), фракция укорочения (FS) 45% (норма). Вторичная гипертрофическая кардиомиопатия из-за избытка гормона роста</li>
+        <li><strong>Рентген грудной клетки:</strong> кардиомегалия, лёгочный рисунок в норме</li>
+        <li><strong>Артериальное давление: 165 мм рт.ст.</strong> (норма &lt;140) — вторичная гипертензия</li>
+      </ul>
+    </div>
+
+    <div class="diagnosis-box">
+      <strong>Диагноз</strong>
+      <p>Акромегалия (гиперсоматотропизм) из-за макроаденомы гипофиза. Осложнения: инсулинорезистентный сахарный диабет, вторичная гипертрофическая кардиомиопатия, артериальная гипертензия. Важно: IGF-1 &gt;1000 нг/мл + макроаденома на МРТ = абсолютный диагноз. Без лечения опухоли диабет контролировать невозможно.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Лечение</span>
+    <h2>Протокол терапии акромегалии</h2>
+    <p>Лучевая терапия опухоли + контроль диабета + лечение вторичной кардиомиопатии</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h4>Коррекция инсулинотерапии (дни 1-30)</h4>
+        <p>Переход с Левемира на Протафан (НПХ-инсулин) — при акромегалии часто работает лучше. Доза: 12 Ед 2 раза в день (продолжаем высокую дозу, так как резистентность сохраняется). Строгий контроль глюкозы: глюкозодинамическая кривая раз в неделю. Цель: предотвратить кетоацидоз, даже если полная компенсация невозможна до лечения опухоли.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h4>Лучевая терапия гипофиза (золотой стандарт)</h4>
+        <p>Гипофракционированная лучевая терапия: 18 фракций по 3 Гр (общая доза 54 Гр) в течение 3.5 недель. Альтернативы: хирургическая гипофизэктомия (высокий риск, делается в единичных центрах Европы) или медикаментозная терапия (аналоги соматостатина — низкоэффективны у кошек). Лучевая терапия останавливает рост опухоли у 80-90% кошек и уменьшает её размер у 50-60%.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h4>Лечение вторичной кардиомиопатии и гипертензии</h4>
+        <p>Атенолол 6.25 мг/кот 1 раз в день — бета-блокатор, снижает потребность миокарда в кислороде, контролирует ЧСС. Амлодипин 0.125 мг/кг 1 раз в день — контроль артериального давления (целевое АД &lt;140 мм рт.ст.). Через 2 недели АД снизилось до 145 мм рт.ст., через месяц — до 135 мм рт.ст.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <h4>Мониторинг после лучевой терапии (месяцы 1-6)</h4>
+        <p>Через 1 месяц после ЛТ: глюкоза 15 ммоль/л, доза инсулина 10 Ед. Через 3 месяца: МРТ контрольное — опухоль уменьшилась с 14 мм до 10 мм (-28%). IGF-1 снизился до 900 нг/мл. Доза инсулина снижена до 6 Ед. Через 6 месяцев: МРТ — опухоль 8 мм (-43% от старта). IGF-1 650 нг/мл. Доза инсулина 3 Ед 2 раза в день (0.35 Ед/кг — норма!). Глюкоза 6-8 ммоль/л.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">05</span>
+        <h4>Долгосрочное поддержание (месяцы 6-18)</h4>
+        <p>Инсулин 3 Ед 2 раза в день, Протафан. Контроль глюкозы раз в месяц. IGF-1 и МРТ раз в 6 месяцев. ЭхоКГ раз в 6 месяцев (контроль HCM). Через 12 месяцев: стабильная ремиссия диабета, опухоль не растёт. Через 18 месяцев: Том активен, вес стабилен 7.8 кг (похудел на 700 г — ушла "акромегалическая" масса), храп уменьшился.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Результаты</span>
+    <h2>Динамика за 18 месяцев</h2>
+    <p>Объективные показатели контроля акромегалии</p>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">1250 → 650</span>
+        <span class="stat-label">IGF-1, нг/мл (снижение на 48%)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">14 → 8</span>
+        <span class="stat-label">Размер опухоли гипофиза, мм (-43%)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">12 → 3</span>
+        <span class="stat-label">Доза инсулина, Ед (нормализация)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">22.5 → 7.5</span>
+        <span class="stat-label">Глюкоза натощак, ммоль/л</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">165 → 130</span>
+        <span class="stat-label">Артериальное давление, мм рт.ст.</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">18+ мес</span>
+        <span class="stat-label">Стабильный контроль без прогрессирования</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Выводы</span>
+    <h2>Ключевые факторы успеха</h2>
+
+    <div class="conclusions">
+      <div class="conclusion-item">
+        <h4>Распознавание инсулинорезистентности</h4>
+        <p>Доза инсулина &gt;1.5-2.0 Ед/кг у кота с диабетом — красный флаг! Необходимо искать причину: акромегалия, гипертиреоз, гиперкортицизм, инфекции, антитела к инсулину. У Тома доза была 1.4 Ед/кг и продолжала расти.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>IGF-1 как скрининговый тест</h4>
+        <p>Измерение IGF-1 — простой и надёжный скрининг акромегалии. Уровень &gt;1000 нг/мл с высокой вероятностью указывает на опухоль. Не требует сложной стимуляционной пробы (в отличие от людей).</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>МРТ — золотой стандарт визуализации</h4>
+        <p>Только МРТ с контрастом может точно оценить размер опухоли гипофиза и инвазию в окружающие структуры. КТ менее информативна для мягких тканей гипофиза.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Лучевая терапия — метод выбора</h4>
+        <p>У кошек с макроаденомами гипофиза (&gt;10 мм) лучевая терапия даёт лучшие результаты, чем у собак. Опухоли хорошо отвечают на облучение. Медиана выживаемости после ЛТ: 2-3 года.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Контроль вторичных осложнений</h4>
+        <p>Акромегалия вызывает не только диабет, но и тяжёлую кардиомиопатию (ГР стимулирует рост миокарда). Без контроля HCM и гипертензии кот погибнет от сердечной недостаточности, даже если диабет будет компенсирован.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Терпение в снижении дозы инсулина</h4>
+        <p>После лучевой терапии опухоль уменьшается медленно (месяцы). Дозу инсулина нужно снижать постепенно, под строгим контролем глюкозы, чтобы не вызвать гипогликемию. У Тома доза снижалась 6 месяцев.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Пожизненный мониторинг</h4>
+        <p>Акромегалия — хроническое заболевание. Контроль IGF-1 и МРТ раз в 6-12 месяцев обязателен для раннего выявления рецидива.</p>
+      </div>
+    </div>
+
+    <div class="warning-block">
+      <strong>⚠️ Важное предупреждение для владельцев пожилых котов с диабетом</strong>
+      <p>Если ваш кот требует огромных доз инсулина, набирает вес (вместо потери), храпит и у него увеличена морда — немедленно проверьте IGF-1 и сделайте МРТ головного мозга. Акромегалия излечима на ранних стадиях, но без диагностики приводит к мучительной смерти.</p>
+      <p style="margin-top: 12px;"><strong>Прогноз:</strong> Без лечения опухоли прогноз плохой (смерть от кетоацидоза или сердечной недостаточности в течение 6-12 месяцев). После успешной лучевой терапии медиана выживаемости составляет 2-3 года, некоторые кошки живут 4-5 лет. Том живёт уже 18+ месяцев с отличным качеством жизни.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h3>Похожий случай?</h3>
+    <p>Ваш кот с диабетом требует огромных доз инсулина? Инсулинорезистентность — признак серьёзной эндокринной патологии. Запишитесь на эндокринологическое обследование.</p>
+    <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>vetminsk.103vet.by · Специализированный терапевтический проект <a href="https://103vet.by/">103vet.by</a></p>
+  <p>© 2026 · Доказательная ветеринарная медицина</p>
+</footer>
+
+</body>
+</html>

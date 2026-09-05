@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сахарный диабет у собак и кошек: лечение и контроль в Минске | vetminsk.103vet.by</title>
+<meta name="description" content="Диагностика и лечение сахарного диабета, ХБП, панкреатита, гипертиреоза, гипотиреоза, гепатита, IBD, цирроза у собак и кошек в Минске. Протоколы WSAVA, IRIS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* === ПЕРЕМЕННЫЕ ИЗ main_style.css === */
+  :root {
+    --color-bg-primary: #F5F0E8;
+    --color-bg-secondary: #EDE8DF;
+    --color-bg-card: #FFFFFF;
+    --color-teal: #1A8B8C;
+    --color-teal-dark: #146B6C;
+    --color-teal-light: #2AB0B1;
+    --color-teal-deep: #0F5859;
+    --color-accent: #E76F51;
+    --color-accent-warm: #F4A261;
+    --color-accent-deep: #d45a3d;
+    --color-text-primary: #2C3E50;
+    --color-text-secondary: #5D6D7E;
+    --color-text-light: #FFFFFF;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+
+  /* === RESET === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--color-teal); text-decoration: none; transition: color 0.3s; }
+  a:hover { color: var(--color-teal-dark); }
+
+  /* === HOME LINK — ЦЕНТР НА ВСЕХ ЭКРАНАХ === */
+  .home-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 20px;
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text-light);
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%);
+    letter-spacing: 0.5px;
+    box-shadow:
+      0 4px 12px rgba(26, 139, 140, 0.3),
+      inset 0 2px 4px rgba(255, 255, 255, 0.4),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .home-link:hover {
+    filter: brightness(1.05);
+    color: var(--color-text-light);
+  }
+
+  /* === NAVIGATION === */
+  .nav {
+    background: rgba(245, 240, 232, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+  }
+
+  /* === ОРАНЖЕВЫЕ КНОПКИ НАВИГАЦИИ === */
+  .nav-inner a {
+    display: inline-block;
+    background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%);
+    color: var(--color-text-light);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 12px 22px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    box-shadow:
+      0 6px 16px rgba(231, 111, 81, 0.35),
+      inset 0 2px 4px rgba(255, 255, 255, 0.4),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+  .nav-inner a:hover {
+    transform: translateY(-3px);
+    color: var(--color-text-light);
+    box-shadow:
+      0 10px 24px rgba(231, 111, 81, 0.5),
+      inset 0 2px 4px rgba(255, 255, 255, 0.4),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.08);
+  }
+  .nav-inner a:active {
+    transform: translateY(-1px);
+    box-shadow:
+      0 4px 10px rgba(231, 111, 81, 0.35),
+      inset 0 2px 4px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* === LAYOUT === */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+
+  /* === HERO === */
+  .hero {
+    background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+    padding: 60px 32px;
+    border-radius: 24px;
+    margin-bottom: 48px;
+    text-align: center;
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.06),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  }
+  .hero-label {
+    display: inline-block;
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%);
+    color: var(--color-text-light);
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    box-shadow:
+      0 8px 16px rgba(26, 139, 140, 0.3),
+      inset 0 2px 4px rgba(255, 255, 255, 0.4),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .hero h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    color: var(--color-teal-deep);
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--color-teal);
+  }
+  .hero p {
+    font-size: clamp(15px, 1.8vw, 17px);
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    max-width: 800px;
+    margin: 0 auto 24px;
+  }
+  .hero-stat {
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--color-teal);
+    padding: 16px 24px;
+    border-left: 3px solid var(--color-accent);
+    background: var(--color-bg-card);
+    border-radius: 0 16px 16px 0;
+    line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  /* === SECTIONS === */
+  .section {
+    background: var(--color-bg-card);
+    border-radius: 24px;
+    padding: 48px 40px;
+    margin-bottom: 32px;
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.06),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  .section:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 16px 40px rgba(26, 139, 140, 0.12),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  }
+
+  .section-label {
+    display: inline-block;
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 100%);
+    color: var(--color-text-light);
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    box-shadow:
+      0 4px 12px rgba(26, 139, 140, 0.25),
+      inset 0 2px 4px rgba(255, 255, 255, 0.4),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+  }
+  .section h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    color: var(--color-teal-deep);
+  }
+  .section h3 {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    color: var(--color-teal-deep);
+    padding-left: 16px;
+    border-left: 3px solid var(--color-accent);
+  }
+  .section p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: 12px;
+  }
+  .section ul, .section ol {
+    margin: 16px 0 16px 20px;
+    color: var(--color-text-secondary);
+  }
+  .section li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* === TABLES === */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 20px 0;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 16px;
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.04),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 500px;
+    background: var(--color-bg-card);
+  }
+  th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-bg-secondary);
+  }
+  th {
+    background: linear-gradient(145deg, var(--color-bg-secondary) 0%, #e5dfd4 100%);
+    font-weight: 600;
+    color: var(--color-teal-deep);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  tr:hover td { background: var(--color-bg-primary); }
+
+  /* === STEP CARDS === */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin: 28px 0;
+  }
+  .step {
+    background: var(--color-bg-card);
+    border-radius: 20px;
+    padding: 32px 28px;
+    position: relative;
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.06),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s;
+  }
+  .step:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 16px 40px rgba(26, 139, 140, 0.15),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  }
+  .step-num {
+    font-family: var(--font-serif);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-teal);
+    opacity: 0.25;
+    line-height: 1;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .step h4 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--color-teal-deep);
+    line-height: 1.4;
+  }
+  .step p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* === STATS === */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 28px 0;
+  }
+  .stat {
+    background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%);
+    color: var(--color-text-light);
+    padding: 28px 24px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow:
+      0 8px 24px rgba(26, 139, 140, 0.3),
+      inset 0 2px 4px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+  }
+  .stat:hover { transform: translateY(-4px); }
+  .stat-num {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 13px;
+    opacity: 0.9;
+    line-height: 1.5;
+  }
+
+  /* === FAQ === */
+  .faq-item {
+    background: var(--color-bg-card);
+    border-radius: 16px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.04),
+      inset 0 2px 4px rgba(255, 255, 255, 0.9);
+  }
+  .faq-q {
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-teal-deep);
+    transition: background 0.3s;
+    line-height: 1.4;
+  }
+  .faq-q:hover { background: var(--color-bg-secondary); }
+  .faq-q::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--color-teal);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+  .faq-item.open .faq-q::after { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .faq-a-inner {
+    padding: 0 24px 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+  }
+  .faq-item.open .faq-a { max-height: 600px; }
+
+  /* === CTA === */
+  .cta {
+    background: linear-gradient(145deg, var(--color-teal-deep) 0%, var(--color-teal-dark) 100%);
+    color: var(--color-text-light);
+    padding: 56px 32px;
+    border-radius: 24px;
+    text-align: center;
+    margin: 48px 0;
+    box-shadow:
+      0 12px 32px rgba(15, 88, 89, 0.3),
+      inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  .cta h3 {
+    font-family: var(--font-serif);
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--color-text-light);
+    border: none;
+    padding: 0;
+    line-height: 1.3;
+  }
+  .cta p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 28px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: var(--color-text-light);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%);
+    color: var(--color-text-light);
+    padding: 18px 36px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow:
+      0 8px 24px rgba(231, 111, 81, 0.35),
+      inset 0 3px 6px rgba(255, 255, 255, 0.4),
+      inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+  }
+  .btn:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 32px rgba(231, 111, 81, 0.45),
+      inset 0 3px 6px rgba(255, 255, 255, 0.4);
+    color: var(--color-text-light);
+  }
+
+  /* === FOOTER === */
+  footer {
+    background: var(--color-teal-deep);
+    color: var(--color-text-light);
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  footer a { color: var(--color-accent-warm); }
+  footer a:hover { color: var(--color-accent); }
+  footer p { opacity: 0.8; margin-bottom: 8px; line-height: 1.5; }
+
+  /* === MOBILE === */
+  @media (max-width: 768px) {
+    .home-link { font-size: 16px; padding: 14px 16px; }
+    .nav { padding: 16px 16px; }
+    .nav-inner { gap: 8px; }
+    .nav-inner a {
+      font-size: 12px;
+      padding: 10px 16px;
+      letter-spacing: 0.5px;
+    }
+    .hero { padding: 40px 20px; border-radius: 20px; }
+    .section { padding: 32px 20px; border-radius: 20px; }
+    .section h2 { font-size: 24px; }
+    .section h3 { font-size: 18px; }
+    .stat-num { font-size: 28px; }
+    .step { padding: 24px 20px; }
+    .step-num { font-size: 40px; }
+    table { font-size: 13px; }
+    th, td { padding: 12px 10px; }
+    .cta { padding: 40px 20px; border-radius: 20px; }
+  }
+
+  @media (max-width: 480px) {
+    .home-link { font-size: 15px; padding: 12px 14px; }
+    .container { padding: 24px 16px; }
+    .hero { padding: 32px 16px; }
+    .hero h1 { font-size: 24px; }
+    .section { padding: 24px 16px; }
+    .section h2 { font-size: 22px; }
+    .nav-inner { gap: 6px; }
+    .nav-inner a {
+      font-size: 11px;
+      padding: 9px 13px;
+      letter-spacing: 0.3px;
+    }
+    .steps { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr; }
+    .btn { padding: 16px 28px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HOME LINK — по центру -->
+<a href="/" class="home-link">vetminsk.103vet.by</a>
+
+<!-- NAVIGATION с оранжевыми кнопками -->
+<nav class="nav">
+  <ul class="nav-inner">
+    <li><a href="#diabet">Диабет</a></li>
+    <li><a href="#hbp">ХБП</a></li>
+    <li><a href="#pankreatit">Панкреатит</a></li>
+    <li><a href="#gipertireoz">Гипертиреоз</a></li>
+    <li><a href="#gipotireoz">Гипотиреоз</a></li>
+    <li><a href="#gepatit">Гепатит</a></li>
+    <li><a href="#ibd">IBD</a></li>
+    <li><a href="#cirkroz">Цирроз</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-label">Эндокринология и терапия</span>
+    <h1>Диагностика и лечение <em>хронических заболеваний</em> у собак и кошек</h1>
+    <p>Сахарный диабет, ХБП, панкреатит, гипертиреоз, гипотиреоз, гепатит, IBD и цирроз в Минске. Работа по протоколам WSAVA и IRIS.</p>
+    <span class="hero-stat">85% пациентов достигают стабильной компенсации при правильном лечении</span>
+  </section>
+
+  <!-- ДИАБЕТ -->
+  <section class="section" id="diabet">
+    <span class="section-label">Эндокринология</span>
+    <h2>Сахарный диабет у собак и кошек</h2>
+    <p>Сахарный диабет — хроническое эндокринное заболевание, при котором организм не может правильно регулировать уровень глюкозы в крови. У собак чаще встречается инсулинозависимый диабет (тип I), у кошек — инсулинонезависимый (тип II).</p>
+    <p>Без лечения диабет приводит к кетоацидозу, коме и гибели животного. При правильном контроле питомец живёт полноценной жизнью долгие годы.</p>
+
+    <h3>Симптомы</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Симптом</th><th>Собаки</th><th>Кошки</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Полидипсия (жажда)</td><td>+++ выраженная</td><td>+++ выраженная</td></tr>
+          <tr><td>Полиурия</td><td>+++ выраженная</td><td>+++ выраженная</td></tr>
+          <tr><td>Потеря веса</td><td>++ умеренная</td><td>+++ выраженная</td></tr>
+          <tr><td>Повышенный аппетит</td><td>++ умеренный</td><td>+++ выраженный</td></tr>
+          <tr><td>Вялость, апатия</td><td>++ умеренная</td><td>+ лёгкая</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Факторы риска</h3>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">🐕</span>
+        <h4>Собаки</h4>
+        <p>Аутоиммунное разрушение β-клеток, панкреатит, гормональные нарушения (эструс, болезнь Кушинга). Породы: шпицы, таксы, пудели, бишон-фризе. Возраст: 7–10 лет.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">🐈</span>
+        <h4>Кошки</h4>
+        <p>Ожирение — главный фактор риска, инсулинорезистентность (тип II), панкреатит, акромегалия, приём глюкокортикоидов. Породы: бирманские. Возраст: 8–12 лет, самцы.</p>
+      </div>
+    </div>
+
+    <h3>Диагностика</h3>
+    <ul>
+      <li>Глюкоза крови натощак (норма: 3.3–6.1 ммоль/л)</li>
+      <li>Фруктозамин (средняя глюкоза за 2–3 недели)</li>
+      <li>Гликированный гемоглобин (HbA1c)</li>
+      <li>Биохимия крови (АЛТ, АСТ, креатинин, мочевина, холестерин)</li>
+      <li>Анализ мочи (глюкозурия, кетоны, удельный вес)</li>
+      <li>УЗИ брюшной полости</li>
+    </ul>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>Инсулинотерапия</h4><p>Лентус, левемир, протамин-цинк-инсулин. Начальная доза: 0.25–0.5 ЕД/кг 2 раза в день. Коррекция каждые 7–14 дней.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Диетотерапия</h4><p>Низкий гликемический индекс, высокий белок и клетчатка. Кормление 2 раза в день одновременно с инъекцией инсулина.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Мониторинг</h4><p>Глюкометр AlphaTrak. Глюкозодинамическая кривая каждые 2–4 часа. Цель: 6–16 ммоль/л. Фруктозамин раз в 3 месяца.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">85%</span><span class="stat-label">достигают стабильной компенсации</span></div>
+      <div class="stat"><span class="stat-num">3–5 лет</span><span class="stat-label">средняя продолжительность жизни</span></div>
+      <div class="stat"><span class="stat-num">30%</span><span class="stat-label">кошек с типом II достигают ремиссии</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Можно ли вылечить диабет у собаки полностью?</div><div class="faq-a"><div class="faq-a-inner"><p>У собак диабет типа I требует пожизненной инсулинотерапии. Полное излечение невозможно, но при правильном контроле животное живёт полноценной жизнью. У кошек с типом II в 30% случаев возможна ремиссия при раннем лечении.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Как часто нужно колоть инсулин?</div><div class="faq-a"><div class="faq-a-inner"><p>Инсулин вводится 2 раза в день с интервалом 12 часов подкожно, в холку или бок. Инъекция всегда после кормления, чтобы избежать гипогликемии.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Какой корм лучше при диабете?</div><div class="faq-a"><div class="faq-a-inner"><p>Специализированные диабетические корма: Royal Canin Diabetic, Hill's Prescription Diet w/d, Purina Pro Plan Veterinary Diets DM. Натуральное питание не рекомендуется.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Что делать при гипогликемии?</div><div class="faq-a"><div class="faq-a-inner"><p>Глюкоза ниже 3.3 ммоль/л — опасное состояние. Первая помощь: сладкая вода (мёд, сахарный сироп) на язык. Если питомец без сознания — срочно в клинику.</p></div></div></div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h3>Нужна консультация эндокринолога?</h3>
+    <p>Запишитесь на приём к ветеринарному терапевту для диагностики и лечения диабета у вашего питомца</p>
+    <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+  </div>
+
+  <!-- ХБП -->
+  <section class="section" id="hbp">
+    <span class="section-label">Нефрология</span>
+    <h2>Хроническая болезнь почек (ХБП)</h2>
+    <p>ХБП — прогрессирующее заболевание, при котором почки постепенно теряют способность фильтровать кровь. По классификации IRIS делится на 4 стадии. У кошек ХБП — основная причина смерти животных старше 10 лет.</p>
+
+    <h3>Стадии IRIS</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Стадия</th><th>Креатинин (мкмоль/л)</th><th>Симптомы</th></tr></thead>
+        <tbody>
+          <tr><td>I</td><td>&lt;140 (кошки), &lt;125 (собаки)</td><td>Бессимптомная</td></tr>
+          <tr><td>II</td><td>140–250</td><td>Лёгкая жажда, снижение аппетита</td></tr>
+          <tr><td>III</td><td>251–440</td><td>Выраженная жажда, рвота, потеря веса</td></tr>
+          <tr><td>IV</td><td>&gt;440</td><td>Тяжёлая уремия, анорексия</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>Диетотерапия</h4><p>Почечная диета с ограничением фосфора и белка: Royal Canin Renal, Hill's k/d, Purina NF. Снижает прогрессирование на 30–50%.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Контроль фосфора</h4><p>Фосфобиндеры (ипакитин, ренал-адванс). Целевой фосфор: стадия II &lt;1.45, III &lt;1.9, IV &lt;2.1 ммоль/л.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Инфузии</h4><p>Подкожные инфузии физраствора 50–150 мл 2–3 раза в неделю. Снижает креатинин на 20–30%.</p></div>
+      <div class="step"><span class="step-num">04</span><h4>Осложнения</h4><p>Амлодипин при давлении &gt;160, эритропоэтин при анемии, калий при гипокалиемии.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">70%</span><span class="stat-label">кошек со стадией II–III живут &gt;2 лет</span></div>
+      <div class="stat"><span class="stat-num">400+ дней</span><span class="stat-label">медиана выживаемости при стадии III</span></div>
+      <div class="stat"><span class="stat-num">30–50%</span><span class="stat-label">замедление прогрессирования</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Можно ли вылечить ХБП полностью?</div><div class="faq-a"><div class="faq-a-inner"><p>ХБП необратима, но при правильном лечении прогрессирование замедляется на 30–50%, и животное живёт годами с хорошим качеством жизни.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Как часто сдавать анализы?</div><div class="faq-a"><div class="faq-a-inner"><p>Стадия II: раз в 3–6 месяцев. Стадия III: раз в 2–3 месяца. Стадия IV: раз в 1–2 месяца.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Можно ли делать подкожные инфузии дома?</div><div class="faq-a"><div class="faq-a-inner"><p>Да, после обучения. Объём 50–150 мл 2–3 раза в неделю. Техника простая: игла под кожу холки, медленное введение.</p></div></div></div>
+  </section>
+
+  <!-- ПАНКРЕАТИТ -->
+  <section class="section" id="pankreatit">
+    <span class="section-label">Гастроэнтерология</span>
+    <h2>Панкреатит у собак и кошек</h2>
+    <p>Панкреатит — воспаление поджелудочной железы. Острый — внезапное тяжёлое воспаление, хронический — вялотекущее с фиброзом. У кошек часто сочетается с холангитом и IBD (триадит).</p>
+
+    <h3>Диагностика</h3>
+    <ul>
+      <li>Специфическая панкреатическая липаза (cPL/fPL) — золотой стандарт</li>
+      <li>УЗИ брюшной полости</li>
+      <li>Биохимия (АЛТ, АСТ, билирубин, глюкоза, кальций)</li>
+      <li>Общий анализ крови</li>
+    </ul>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>Инфузии</h4><p>Внутривенные капельницы 60–80 мл/кг/сутки. Контроль электролитов.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Обезболивание</h4><p>Опиоиды (метадон, бупренорфин). НПВС противопоказаны! При хроническом — габапентин.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Противорвотные</h4><p>Маропитант 1 мг/кг, ондансетрон при тяжёлой рвоте.</p></div>
+      <div class="step"><span class="step-num">04</span><h4>Диета</h4><p>Низкожировая: Royal Canin GI Low Fat, Hill's i/d Low Fat. 4–6 раз в день маленькими порциями.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">80%</span><span class="stat-label">полное восстановление при остром</span></div>
+      <div class="stat"><span class="stat-num">60%</span><span class="stat-label">кошек с хроническим живут &gt;1.5 лет</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Можно ли кормить собаку при панкреатите?</div><div class="faq-a"><div class="faq-a-inner"><p>Протоколы WSAVA рекомендуют раннее энтеральное питание в течение 24–48 часов. Низкожировая диета маленькими порциями 4–6 раз в день.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Что такое триадит у кошек?</div><div class="faq-a"><div class="faq-a-inner"><p>Одновременное воспаление поджелудочной железы, печени и кишечника. Встречается у 50–60% кошек с панкреатитом.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Нужны ли ферменты?</div><div class="faq-a"><div class="faq-a-inner"><p>Только при подтверждённой экзокринной недостаточности (тест TLI ниже нормы). При обычном панкреатите ферменты не нужны.</p></div></div></div>
+  </section>
+
+  <!-- ГИПЕРТИРЕОЗ -->
+  <section class="section" id="gipertireoz">
+    <span class="section-label">Эндокринология</span>
+    <h2>Гипертиреоз у кошек</h2>
+    <p>Избыток тиреоидных гормонов (Т3, Т4). Самое распространённое эндокринное заболевание у кошек старше 10 лет. В 95–97% случаев — доброкачественная аденома.</p>
+
+    <h3>Симптомы</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Система</th><th>Симптом</th><th>Частота</th></tr></thead>
+        <tbody>
+          <tr><td>Метаболизм</td><td>Потеря веса при повышенном аппетите</td><td>95%</td></tr>
+          <tr><td>Сердце</td><td>Тахикардия, гипертензия</td><td>85%</td></tr>
+          <tr><td>ЖКТ</td><td>Рвота, диарея</td><td>70%</td></tr>
+          <tr><td>Поведение</td><td>Гиперактивность, мяуканье ночью</td><td>60%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>Тиреостатики</h4><p>Метимазол 2.5 мг 2 раза в день. Целевой Т4: 10–30 нмоль/л.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Диета y/d</h4><p>Hill's y/d с ограниченным йодом. Эффективна у 70% кошек.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Радиойод I-131</h4><p>Эффективность 95–97%. Требует изоляции 2–4 недели.</p></div>
+      <div class="step"><span class="step-num">04</span><h4>Хирургия</h4><p>Тиреоидэктомия. Эффективность 90–95%.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">90%</span><span class="stat-label">достигают компенсации</span></div>
+      <div class="stat"><span class="stat-num">95–97%</span><span class="stat-label">эффективность радиойода</span></div>
+      <div class="stat"><span class="stat-num">2–4 года</span><span class="stat-label">средняя продолжительность жизни</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Почему нужно проверять почки?</div><div class="faq-a"><div class="faq-a-inner"><p>Гипертиреоз маскирует ХБП: повышенный метаболизм увеличивает почечный кровоток. После лечения ХБП может проявиться.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Какие побочные эффекты у метимазола?</div><div class="faq-a"><div class="faq-a-inner"><p>Встречаются у 15–20% кошек: рвота, анорексия, летаргия (первые 2–3 недели). Редко: гепатопатия, агранулоцитоз.</p></div></div></div>
+  </section>
+
+  <!-- ГИПОТИРЕОЗ -->
+  <section class="section" id="gipotireoz">
+    <span class="section-label">Эндокринология</span>
+    <h2>Гипотиреоз у собак</h2>
+    <p>Недостаток тиреоидных гормонов. Самое распространённое эндокринное заболевание у собак. В 90% случаев — идиопатическая атрофия или аутоиммунный тиреоидит.</p>
+
+    <h3>Симптомы</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Система</th><th>Симптом</th><th>Частота</th></tr></thead>
+        <tbody>
+          <tr><td>Кожа</td><td>Симметричная алопеция, себорея</td><td>85%</td></tr>
+          <tr><td>Метаболизм</td><td>Набор веса, непереносимость холода</td><td>75%</td></tr>
+          <tr><td>Нервная система</td><td>Вялость, апатия</td><td>70%</td></tr>
+          <tr><td>Сердце</td><td>Брадикардия, гиперхолестеринемия</td><td>60%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>L-тироксин</h4><p>Левотироксин 0.02 мг/кг 2 раза в день. Целевой Т4 — верхняя половина референса через 4–6 часов после дачи.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Мониторинг Т4</h4><p>Контроль каждые 4–6 недель до стабилизации, затем раз в 6–12 месяцев.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Контроль холестерина</h4><p>Липидный профиль нормализуется в течение 2–4 месяцев после начала терапии.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">95%</span><span class="stat-label">собак достигают компенсации</span></div>
+      <div class="stat"><span class="stat-num">2–4 нед</span><span class="stat-label">до первых улучшений</span></div>
+      <div class="stat"><span class="stat-num">2–4 мес</span><span class="stat-label">до восстановления шерсти</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Нужно ли давать L-тироксин пожизненно?</div><div class="faq-a"><div class="faq-a-inner"><p>Да, щитовидная железа не восстанавливается. Отмена приводит к возврату симптомов за 2–4 недели.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Можно ли давать с едой?</div><div class="faq-a"><div class="faq-a-inner"><p>Лучше натощак, но приём с едой снижает биодоступность только на 20–30%, что клинически незначимо. Главное — в одно время.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Восстановится ли шерсть?</div><div class="faq-a"><div class="faq-a-inner"><p>Да, полностью в течение 2–4 месяцев. Сначала подшёрсток, затем остевой волос.</p></div></div></div>
+  </section>
+
+  <!-- ГЕПАТИТ -->
+  <section class="section" id="gepatit">
+    <span class="section-label">Гепатология</span>
+    <h2>Гепатит и болезни печени</h2>
+    <p>Гепатит — воспаление печени. Острый часто обратим, хронический приводит к фиброзу и циррозу. Липидоз печени — накопление жира (чаще у кошек при анорексии).</p>
+
+    <h3>Диагностика</h3>
+    <ul>
+      <li>АЛТ, АСТ, ЩФ, ГГТ, билирубин</li>
+      <li>Альбумин, общий белок, глюкоза, холестерин</li>
+      <li>Желчные кислоты (стимуляционный тест)</li>
+      <li>УЗИ печени</li>
+      <li>Биопсия — золотой стандарт</li>
+    </ul>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>Гепатопротекторы</h4><p>SAMe (денерол), силимарин, урсодезоксихолевая кислота 10–15 мг/кг/сутки.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Диета</h4><p>Royal Canin Hepatic, Hill's l/d. При липидозе — высокобелковая.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Детоксикация</h4><p>Лактулоза 0.5–1 мл/кг 2–3 раза в день, метронидазол/рифаксимин.</p></div>
+      <div class="step"><span class="step-num">04</span><h4>Симптоматика</h4><p>Маропитант, миртазапин, витамин К, альбумин при необходимости.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">75%</span><span class="stat-label">острый гепатит полностью излечим</span></div>
+      <div class="stat"><span class="stat-num">60–70%</span><span class="stat-label">кошек с липидозом выздоравливают</span></div>
+      <div class="stat"><span class="stat-num">1–3 года</span><span class="stat-label">медиана при хроническом гепатите</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Что такое липидоз печени у кошек?</div><div class="faq-a"><div class="faq-a-inner"><p>Накопление жира в гепатоцитах при анорексии более 3–5 дней, особенно у кошек с ожирением. Лечение: агрессивное кормление через зонд, высокобелковая диета.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Нужна ли биопсия?</div><div class="faq-a"><div class="faq-a-inner"><p>Золотой стандарт для точного диагноза. Показания: стойкое повышение ферментов, подозрение на неоплазию, неэффективность эмпирической терапии.</p></div></div></div>
+  </section>
+
+  <!-- IBD -->
+  <section class="section" id="ibd">
+    <span class="section-label">Гастроэнтерология</span>
+    <h2>Воспалительное заболевание кишечника (IBD)</h2>
+    <p>IBD — группа хронических заболеваний с инфильтрацией слизистой кишечника воспалительными клетками. Одна из наиболее частых причин хронической рвоты и диареи.</p>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>Исключающая диета</h4><p>Гидролизованный корм (Royal Canin Anallergenic, Hill's z/d) или новый белок. Строго 8–12 недель. 60–70% реагируют.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Пробиотики</h4><p>Enterococcus faecium, Bifidobacterium. Пребиотики (инулин, ФОС). Курс 2–3 месяца.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Иммуносупрессия</h4><p>Преднизолон 1–2 мг/кг/сутки с постепенным снижением. При неэффективности — азатиоприн (собаки), хлорамбуцил (кошки).</p></div>
+      <div class="step"><span class="step-num">04</span><h4>Антибиотики</h4><p>Тилмикоцин, метронидазол при подозрении на бактериальную компоненту. Курс 2–4 недели.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">70%</span><span class="stat-label">достигают стойкой ремиссии</span></div>
+      <div class="stat"><span class="stat-num">60–70%</span><span class="stat-label">реагируют на исключающую диету</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Что такое гидролизованный корм?</div><div class="faq-a"><div class="faq-a-inner"><p>Белки расщеплены на мелкие пептиды (&lt;10 кДа), которые не распознаются иммунной системой. Примеры: Royal Canin Anallergenic, Hill's z/d, Purina HA.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Можно ли давать лакомства?</div><div class="faq-a"><div class="faq-a-inner"><p>При исключающей диете — категорически нет. Даже одно лакомство может спровоцировать рецидив. После ремиссии — только из того же источника белка.</p></div></div></div>
+  </section>
+
+  <!-- ЦИРРОЗ -->
+  <section class="section" id="cirkroz">
+    <span class="section-label">Гепатология</span>
+    <h2>Цирроз печени</h2>
+    <p>Цирроз — необратимое замещение нормальной печёночной ткани фиброзной с образованием регенеративных узлов. Конечная стадия хронических болезней печени.</p>
+
+    <h3>Симптомы</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Симптом</th><th>Ранняя стадия</th><th>Поздняя стадия</th></tr></thead>
+        <tbody>
+          <tr><td>Вялость</td><td>++ умеренная</td><td>+++ выраженная</td></tr>
+          <tr><td>Аппетит</td><td>+ лёгкое снижение</td><td>+++ полный отказ</td></tr>
+          <tr><td>Асцит</td><td>— отсутствует</td><td>+++ выраженный</td></tr>
+          <tr><td>Желтуха</td><td>— отсутствует</td><td>++ умеренная</td></tr>
+          <tr><td>Энцефалопатия</td><td>— отсутствует</td><td>++ дезориентация, судороги</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Протокол лечения</h3>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h4>Диета</h4><p>Умеренное ограничение белка, ограничение натрия при асците. 4–6 раз в день маленькими порциями.</p></div>
+      <div class="step"><span class="step-num">02</span><h4>Гепатопротекторы</h4><p>SAMe, силимарин, урсодезоксихолевая кислота, витамин Е, витамин К. Пожизненно.</p></div>
+      <div class="step"><span class="step-num">03</span><h4>Контроль асцита</h4><p>Спиронолактон, фуросемид. При напряжённом — абдоминоцентез.</p></div>
+      <div class="step"><span class="step-num">04</span><h4>Энцефалопатия</h4><p>Лактулоза 0.5–1 мл/кг 2–3 раза в день, метронидазол/рифаксимин.</p></div>
+    </div>
+
+    <h3>Прогноз</h3>
+    <div class="stats">
+      <div class="stat"><span class="stat-num">1–3 года</span><span class="stat-label">медиана при ранней диагностике</span></div>
+      <div class="stat"><span class="stat-num">6–12 мес</span><span class="stat-label">при поздней диагностике</span></div>
+      <div class="stat"><span class="stat-num">Необратимо</span><span class="stat-label">но можно контролировать осложнения</span></div>
+    </div>
+
+    <h3>Частые вопросы</h3>
+    <div class="faq-item"><div class="faq-q">Можно ли вылечить цирроз?</div><div class="faq-a"><div class="faq-a-inner"><p>Цирроз необратим. Цель — замедлить прогрессирование и контролировать осложнения (асцит, энцефалопатия, кровоточивость).</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Почему ограничивают белок?</div><div class="faq-a"><div class="faq-a-inner"><p>При энцефалопатии — для снижения аммиака. Но строгое ограничение опасно: приводит к кахексии. Современный подход — умеренное ограничение с высококачественным белком.</p></div></div></div>
+    <div class="faq-item"><div class="faq-q">Что такое печёночная энцефалопатия?</div><div class="faq-a"><div class="faq-a-inner"><p>Неврологические нарушения из-за накопления аммиака. Симптомы: дезориентация, «манежные» движения, судороги, кома. Лечение: лактулоза, антибиотики, умеренное ограничение белка.</p></div></div></div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <div class="cta">
+    <h3>Нужна консультация специалиста?</h3>
+    <p>Запишитесь на приём к ветеринарному терапевту для диагностики и лечения вашего питомца</p>
+    <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>vetminsk.103vet.by · Специализированный терапевтический проект <a href="https://103vet.by/">103vet.by</a></p>
+  <p>© 2026 · Доказательная ветеринарная медицина</p>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>

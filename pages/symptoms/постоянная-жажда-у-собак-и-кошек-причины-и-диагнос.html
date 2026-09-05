@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Симптомы заболеваний у собак и кошек: диагностика в Минске | vetminsk.103vet.by</title>
+<meta name="description" content="Основные симптомы хронических заболеваний у собак и кошек: полидипсия, потеря веса, желтуха, отёки, хроническая рвота, диарея. Дифференциальная диагностика и лечение в Минске.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --color-bg-primary: #F5F0E8; --color-bg-secondary: #EDE8DF; --color-bg-card: #FFFFFF; --color-teal: #1A8B8C; --color-teal-dark: #146B6C; --color-teal-light: #2AB0B1; --color-teal-deep: #0F5859; --color-accent: #E76F51; --color-accent-warm: #F4A261; --color-accent-deep: #d45a3d; --color-text-primary: #2C3E50; --color-text-secondary: #5D6D7E; --color-text-light: #FFFFFF; --font-serif: 'Playfair Display', serif; --font-sans: 'Inter', sans-serif; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { font-family: var(--font-sans); background: var(--color-bg-primary); color: var(--color-text-primary); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  a { color: var(--color-teal); text-decoration: none; transition: color 0.3s; }
+  a:hover { color: var(--color-teal-dark); }
+  .home-link { display: block; width: 100%; text-align: center; text-decoration: none; padding: 16px 20px; font-family: var(--font-serif); font-size: 18px; font-weight: 700; color: var(--color-text-light); background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; }
+  .home-link:hover { filter: brightness(1.05); color: var(--color-text-light); }
+  .nav { background: rgba(245, 240, 232, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 20px 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; list-style: none; }
+  .nav-inner a { display: inline-block; background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%); color: var(--color-text-light); font-size: 13px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; padding: 12px 22px; border-radius: 100px; text-decoration: none; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 6px 16px rgba(231, 111, 81, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.15); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+  .nav-inner a:hover { transform: translateY(-3px); color: var(--color-text-light); box-shadow: 0 10px 24px rgba(231, 111, 81, 0.5); filter: brightness(1.08); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .hero { background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); padding: 60px 32px; border-radius: 24px; margin-bottom: 48px; text-align: center; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9); }
+  .hero-label { display: inline-block; background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 12px 28px; border-radius: 100px; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; box-shadow: 0 8px 16px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2); }
+  .hero h1 { font-family: var(--font-serif); font-size: clamp(28px, 5vw, 48px); font-weight: 600; line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; color: var(--color-teal-deep); }
+  .hero h1 em { font-style: italic; color: var(--color-teal); }
+  .hero p { font-size: clamp(15px, 1.8vw, 17px); font-weight: 300; line-height: 1.7; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto 24px; }
+  .hero-stat { display: inline-block; font-family: var(--font-serif); font-style: italic; font-size: 16px; color: var(--color-teal); padding: 16px 24px; border-left: 3px solid var(--color-accent); background: var(--color-bg-card); border-radius: 0 16px 16px 0; line-height: 1.5; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); text-align: left; }
+  .section { background: var(--color-bg-card); border-radius: 24px; padding: 48px 40px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9), inset 0 -2px 4px rgba(0, 0, 0, 0.04); transition: transform 0.4s, box-shadow 0.4s; }
+  .section:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(26, 139, 140, 0.12); }
+  .section-label { display: inline-block; background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 100%); color: var(--color-text-light); padding: 8px 20px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(26, 139, 140, 0.25); }
+  .section h2 { font-family: var(--font-serif); font-size: clamp(24px, 3.5vw, 36px); font-weight: 600; line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 16px; color: var(--color-teal-deep); }
+  .section h3 { font-family: var(--font-serif); font-size: 20px; font-weight: 600; margin: 32px 0 16px; color: var(--color-teal-deep); padding-left: 16px; border-left: 3px solid var(--color-accent); }
+  .section p { font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); margin-bottom: 12px; }
+  .symptom-icon { font-size: 56px; line-height: 1; margin-bottom: 16px; display: block; }
+  .warning-box { background: linear-gradient(145deg, #fff5f0 0%, #ffe8dd 100%); border-left: 4px solid var(--color-accent); padding: 20px 24px; border-radius: 0 16px 16px 0; margin: 20px 0; box-shadow: 0 4px 12px rgba(231, 111, 81, 0.1); }
+  .warning-box strong { display: block; font-family: var(--font-serif); font-size: 16px; color: var(--color-accent-deep); margin-bottom: 8px; }
+  .warning-box p { font-size: 14px; line-height: 1.7; color: var(--color-text-primary); margin: 0; }
+  .causes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 28px 0; }
+  .cause-group { background: var(--color-bg-card); border-radius: 20px; padding: 28px 24px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9); border-top: 4px solid var(--color-teal); }
+  .cause-group h4 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; margin-bottom: 16px; color: var(--color-teal-deep); line-height: 1.4; display: flex; align-items: center; gap: 10px; }
+  .cause-group h4::before { content: ''; width: 8px; height: 8px; background: linear-gradient(145deg, var(--color-accent-warm), var(--color-accent)); border-radius: 50%; flex-shrink: 0; }
+  .cause-group ul { list-style: none; padding: 0; margin: 0; }
+  .cause-group ul li { padding: 10px 0; border-bottom: 1px solid var(--color-bg-secondary); font-size: 14px; color: var(--color-text-primary); display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .cause-group ul li:last-child { border-bottom: none; }
+  .cause-group ul li::before { content: ''; width: 6px; height: 6px; background: linear-gradient(145deg, var(--color-accent-warm), var(--color-accent)); border-radius: 50%; margin-top: 8px; flex-shrink: 0; }
+  .diagnosis-list { background: var(--color-bg-primary); border-radius: 16px; padding: 24px; margin: 20px 0; }
+  .diagnosis-list ul { list-style: none; padding: 0; margin: 0; }
+  .diagnosis-list ul li { padding: 12px 0; border-bottom: 1px solid var(--color-bg-secondary); font-size: 14px; color: var(--color-text-primary); display: flex; gap: 12px; align-items: flex-start; line-height: 1.6; }
+  .diagnosis-list ul li:last-child { border-bottom: none; }
+  .diagnosis-list ul li::before { content: ''; width: 8px; height: 8px; background: linear-gradient(145deg, var(--color-accent-warm), var(--color-accent)); border-radius: 50%; margin-top: 8px; flex-shrink: 0; box-shadow: 0 2px 6px rgba(231, 111, 81, 0.3); }
+  .diagnosis-list ul li strong { color: var(--color-teal-deep); }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 28px 0; }
+  .related-card { background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 28px 24px; border-radius: 20px; box-shadow: 0 8px 24px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.2); transition: transform 0.4s; text-decoration: none; display: block; }
+  .related-card:hover { transform: translateY(-6px); }
+  .related-card h4 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; margin-bottom: 10px; line-height: 1.3; }
+  .related-card p { font-size: 13px; line-height: 1.6; opacity: 0.95; margin: 0; }
+  .cta { background: linear-gradient(145deg, var(--color-teal-deep) 0%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 48px 32px; border-radius: 24px; text-align: center; margin: 40px 0; box-shadow: 0 12px 32px rgba(15, 88, 89, 0.3); }
+  .cta h3 { font-family: var(--font-serif); font-size: clamp(22px, 3vw, 30px); font-weight: 600; margin-bottom: 12px; color: var(--color-text-light); line-height: 1.3; }
+  .cta p { font-size: 15px; font-weight: 300; margin-bottom: 24px; opacity: 0.92; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; color: var(--color-text-light); }
+  .btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%); color: var(--color-text-light); padding: 18px 36px; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 100px; box-shadow: 0 8px 24px rgba(231, 111, 81, 0.35); transition: all 0.4s; }
+  .btn:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(231, 111, 81, 0.45); color: var(--color-text-light); }
+  footer { background: var(--color-teal-deep); color: var(--color-text-light); padding: 32px 24px; text-align: center; font-size: 13px; margin-top: 48px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  footer a { color: var(--color-accent-warm); }
+  footer p { opacity: 0.8; margin-bottom: 8px; line-height: 1.5; }
+  @media (max-width: 768px) { .home-link { font-size: 16px; padding: 14px 16px; } .nav { padding: 16px 16px; } .nav-inner { gap: 8px; } .nav-inner a { font-size: 12px; padding: 10px 16px; letter-spacing: 0.5px; } .hero { padding: 40px 20px; border-radius: 20px; } .section { padding: 32px 20px; border-radius: 20px; } .section h2 { font-size: 24px; } .section h3 { font-size: 18px; } .cause-group, .related-card { padding: 24px 20px; } .cta { padding: 36px 20px; border-radius: 20px; } }
+  @media (max-width: 480px) { .home-link { font-size: 15px; padding: 12px 14px; } .container { padding: 24px 16px; } .hero { padding: 32px 16px; } .hero h1 { font-size: 24px; } .section { padding: 24px 16px; } .section h2 { font-size: 22px; } .nav-inner { gap: 6px; } .nav-inner a { font-size: 11px; padding: 9px 13px; letter-spacing: 0.3px; } .causes-grid, .related-grid { grid-template-columns: 1fr; } .btn { padding: 16px 28px; font-size: 12px; } }
+</style>
+</head>
+<body>
+
+<a href="/" class="home-link">vetminsk.103vet.by</a>
+
+<nav class="nav">
+  <ul class="nav-inner">
+    <li><a href="/">Главная</a></li>
+    <li><a href="#polidipsiya">Жажда</a></li>
+    <li><a href="#poterya-vesa">Вес</a></li>
+    <li><a href="#zheltuha">Желтуха</a></li>
+    <li><a href="#otyoki">Отёки</a></li>
+    <li><a href="#rvota">Рвота</a></li>
+    <li><a href="#diareya">Диарея</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <section class="hero">
+    <span class="hero-label">Симптомы</span>
+    <h1>Симптомы хронических заболеваний <em>у собак и кошек</em></h1>
+    <p>Основные симптомы, которые указывают на серьёзные системные нарушения. Раннее распознавание симптомов — ключ к своевременной диагностике и эффективному лечению.</p>
+    <span class="hero-stat">
+      <strong style="color: var(--color-accent); display: block; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px;">Важно:</strong>
+      Если симптом сохраняется более 3 дней — необходимо обследование у терапевта
+    </span>
+  </section>
+
+  <!-- ПОЛИДИПСИЯ -->
+  <section class="section" id="polidipsiya">
+    <span class="symptom-icon">💧</span>
+    <span class="section-label">Симптом</span>
+    <h2>Постоянная жажда (полидипсия)</h2>
+    <p>Полидипсия — это повышенное потребление воды, превышающее норму (50-70 мл/кг/сутки для собак и кошек). Часто сопровождается полиурией — увеличенным объёмом мочи.</p>
+    <p>Полидипсия — не самостоятельное заболевание, а симптом, указывающий на серьёзные системные нарушения: эндокринные заболевания, болезни почек, печени или психогенные расстройства.</p>
+
+    <div class="warning-box">
+      <strong>⚠️ Критично</strong>
+      <p>Если питомец пьёт в 2+ раза больше нормы более 3 дней — необходимо обследование у терапевта. Норма потребления воды: 50-70 мл/кг/сутки. Превышение в 2+ раза — повод для обследования.</p>
+    </div>
+
+    <h3>Основные причины полидипсии</h3>
+    <div class="causes-grid">
+      <div class="cause-group">
+        <h4>Эндокринные</h4>
+        <ul>
+          <li>Сахарный диабет (самая частая причина)</li>
+          <li>Несахарный диабет (редко)</li>
+          <li>Гипертиреоз (у кошек)</li>
+          <li>Гипотиреоз (у собак)</li>
+          <li>Болезнь Кушинга (гиперадренокортицизм)</li>
+          <li>Гиперкальциемия</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Почечные</h4>
+        <ul>
+          <li>Хроническая болезнь почек (ХБП)</li>
+          <li>Острая почечная недостаточность</li>
+          <li>Пиелонефрит</li>
+          <li>Гломерулонефрит</li>
+          <li>Амилоидоз почек</li>
+          <li>Поликистоз почек (у кошек)</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Другие причины</h4>
+        <ul>
+          <li>Печёночная недостаточность</li>
+          <li>Пиометра (у нестерилизованных сук)</li>
+          <li>Психогенная полидипсия</li>
+          <li>Приём некоторых препаратов</li>
+          <li>Горячая погода, физические нагрузки</li>
+          <li>Диета с высоким содержанием соли</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Как диагностировать причину полидипсии</h3>
+    <div class="diagnosis-list">
+      <ul>
+        <li>Сбор анамнеза: объём потребляемой воды, частота мочеиспускания, динамика веса</li>
+        <li>Общий анализ крови (исключение анемии, инфекции, диабета)</li>
+        <li>Биохимия крови (креатинин, мочевина, глюкоза, кальций, АЛТ, АСТ)</li>
+        <li>Анализ мочи (удельный вес, глюкоза, белок, осадок)</li>
+        <li>Тест на Т4 (при подозрении на гипертиреоз у кошек)</li>
+        <li>УЗИ брюшной полости (почки, печень, матка)</li>
+        <li>Тест стимуляции АКТГ (при подозрении на болезнь Кушинга)</li>
+      </ul>
+    </div>
+
+    <h3>Связанные заболевания</h3>
+    <div class="related-grid">
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#diabet" class="related-card">
+        <h4>Сахарный диабет</h4>
+        <p>85% пациентов с диабетом имеют полидипсию. Диагностика и лечение в Минске.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#hbp" class="related-card">
+        <h4>Хроническая болезнь почек</h4>
+        <p>70% кошек с ХБП стадии II+ имеют полидипсию. Протокол IRIS.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#gipertireoz" class="related-card">
+        <h4>Гипертиреоз</h4>
+        <p>40% кошек с гипертиреозом имеют полидипсию. 90% достигают компенсации.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#gipotireoz" class="related-card">
+        <h4>Гипотиреоз</h4>
+        <p>Редкая причина полидипсии у собак. 95% достигают компенсации.</p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <h3>Ваш питомец много пьёт?</h3>
+      <p>Запишитесь на приём для диагностики причины полидипсии и назначения лечения</p>
+      <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+    </div>
+  </section>
+
+  <!-- ПОТЕРЯ ВЕСА -->
+  <section class="section" id="poterya-vesa">
+    <span class="symptom-icon">⚖️</span>
+    <span class="section-label">Симптом</span>
+    <h2>Патологическая потеря веса</h2>
+    <p>Патологическая потеря веса — это снижение массы тела более чем на 10% от нормальной за короткий период (1-3 месяца) без преднамеренного ограничения калорий.</p>
+    <p>В отличие от физиологического похудения (диета, увеличение активности), патологическая потеря веса всегда указывает на серьёзное заболевание и требует комплексного обследования.</p>
+
+    <div class="warning-box">
+      <strong>⚠️ Критично</strong>
+      <p>Потеря более 10% массы тела за месяц — критический признак, требующий срочного обследования. Потеря веса может происходить при нормальном или даже повышенном аппетите (гипертиреоз, диабет) или при сниженном аппетите (ХБП, онкология, IBD).</p>
+    </div>
+
+    <h3>Основные причины потери веса</h3>
+    <div class="causes-grid">
+      <div class="cause-group">
+        <h4>При повышенном аппетите</h4>
+        <ul>
+          <li>Сахарный диабет</li>
+          <li>Гипертиреоз (у кошек)</li>
+          <li>Экзокринная недостаточность поджелудочной</li>
+          <li>Мальабсорбция (нарушение всасывания)</li>
+          <li>Паразитарные инвазии</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>При сниженном аппетите</h4>
+        <ul>
+          <li>Хроническая болезнь почек (ХБП)</li>
+          <li>Онкология (лимфома, карцинома)</li>
+          <li>Воспалительное заболевание кишечника (IBD)</li>
+          <li>Хронический панкреатит</li>
+          <li>Печёночная недостаточность</li>
+          <li>Хронические инфекции (FIV, FeLV, FIP)</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Другие причины</h4>
+        <ul>
+          <li>Стоматологические проблемы</li>
+          <li>Хронический стресс</li>
+          <li>Неврологические заболевания</li>
+          <li>Сердечная недостаточность</li>
+          <li>Возрастные изменения</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Диагностический протокол</h3>
+    <div class="diagnosis-list">
+      <ul>
+        <li>Точное взвешивание и расчёт индекса кондиции тела (BCS)</li>
+        <li>Сбор анамнеза: аппетит, активность, стул, рвота</li>
+        <li>Общий анализ крови (анемия, лейкоцитоз)</li>
+        <li>Биохимия крови (глюкоза, креатинин, АЛТ, альбумин, холестерин)</li>
+        <li>Анализ мочи (глюкоза, белок, удельный вес)</li>
+        <li>Тест на Т4 (для кошек старше 7 лет)</li>
+        <li>Тест TLI (экзокринная недостаточность поджелудочной)</li>
+        <li>УЗИ брюшной полости (органы, лимфоузлы, новообразования)</li>
+        <li>Рентген грудной клетки (исключение метастазов)</li>
+        <li>Анализ кала (паразиты, скрытая кровь)</li>
+      </ul>
+    </div>
+
+    <h3>Связанные заболевания</h3>
+    <div class="related-grid">
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#diabet" class="related-card">
+        <h4>Сахарный диабет</h4>
+        <p>Потеря веса при повышенном аппетите. 85% достигают компенсации.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#gipertireoz" class="related-card">
+        <h4>Гипертиреоз</h4>
+        <p>95% кошек с гипертиреозом теряют вес. 90% достигают компенсации.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#hbp" class="related-card">
+        <h4>Хроническая болезнь почек</h4>
+        <p>70% кошек с ХБП теряют вес. Протокол IRIS.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#ibd" class="related-card">
+        <h4>IBD</h4>
+        <p>Хроническая диарея и потеря веса. 70% достигают ремиссии.</p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <h3>Ваш питомец теряет вес?</h3>
+      <p>Запишитесь на приём для диагностики причины потери веса и назначения лечения</p>
+      <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+    </div>
+  </section>
+
+  <!-- ЖЕЛТУХА -->
+  <section class="section" id="zheltuha">
+    <span class="symptom-icon">🟡</span>
+    <span class="section-label">Симптом</span>
+    <h2>Желтуха (иктеричность)</h2>
+    <p>Желтуха (иктеричность) — это пожелтение слизистых оболочек, кожи и склер глаз из-за накопления билирубина в крови. Билирубин — это пигмент, образующийся при разрушении эритроцитов.</p>
+    <p>В норме печень перерабатывает билирубин и выводит его с желчью. При заболеваниях печени, гемолитической анемии или обструкции желчных путей билирубин накапливается в крови, вызывая желтуху.</p>
+
+    <div class="warning-box">
+      <strong>⚠️ Критично</strong>
+      <p>Желтуха всегда указывает на серьёзное заболевание. Требуется срочное обследование в течение 24-48 часов.</p>
+    </div>
+
+    <h3>Три типа желтухи</h3>
+    <div class="causes-grid">
+      <div class="cause-group">
+        <h4>Прегепатическая (гемолитическая)</h4>
+        <ul>
+          <li>Гемолитическая анемия (аутоиммунная)</li>
+          <li>Отравление луком, чесноком</li>
+          <li>Пироплазмоз (бабезиоз)</li>
+          <li>Гемотрансфузионные реакции</li>
+          <li>Инфекции (Mycoplasma haemofelis у кошек)</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Гепатическая (печёночная)</h4>
+        <ul>
+          <li>Острый или хронический гепатит</li>
+          <li>Цирроз печени</li>
+          <li>Липидоз печени (у кошек)</li>
+          <li>Токсическое поражение печени</li>
+          <li>Неоплазия печени</li>
+          <li>Инфекционный гепатит</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Постгепатическая (обструктивная)</h4>
+        <ul>
+          <li>Желчекаменная болезнь</li>
+          <li>Опухоль желчных путей</li>
+          <li>Панкреатит (сдавление желчного протока)</li>
+          <li>Разрыв желчного пузыря</li>
+          <li>Стриктуры желчных протоков</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Диагностический протокол</h3>
+    <div class="diagnosis-list">
+      <ul>
+        <li>Биохимия крови: общий и прямой билирубин, АЛТ, АСТ, ЩФ, ГГТ</li>
+        <li>Общий анализ крови (анемия, ретикулоциты при гемолитической желтухе)</li>
+        <li>Коагулограмма (ПТ, АЧТВ — при печёночной недостаточности)</li>
+        <li>Анализ мочи (билирубинурия)</li>
+        <li>УЗИ брюшной полости (печень, желчный пузырь, желчные протоки)</li>
+        <li>Тест на гемолитическую анемию (проба Кумбса)</li>
+        <li>Тест на пироплазмоз (мазок крови, ПЦР)</li>
+        <li>Биопсия печени (при подозрении на гепатит, цирроз, неоплазию)</li>
+      </ul>
+    </div>
+
+    <h3>Связанные заболевания</h3>
+    <div class="related-grid">
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#gepatit" class="related-card">
+        <h4>Гепатит</h4>
+        <p>75% пациентов с острым гепатитом полностью восстанавливаются.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#cirkroz" class="related-card">
+        <h4>Цирроз печени</h4>
+        <p>Поздний признак цирроза. Медиана выживаемости 1-3 года.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#pankreatit" class="related-card">
+        <h4>Панкреатит</h4>
+        <p>Может вызывать обструктивную желтуху. 80% восстанавливаются.</p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <h3>У питомца пожелтели слизистые?</h3>
+      <p>Желтуха требует срочного обследования. Запишитесь на приём в течение 24-48 часов</p>
+      <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+    </div>
+  </section>
+
+  <!-- ОТЁКИ -->
+  <section class="section" id="otyoki">
+    <span class="symptom-icon">🫧</span>
+    <span class="section-label">Симптом</span>
+    <h2>Отёки и увеличение живота</h2>
+    <p>Отёки — это накопление жидкости в межклеточном пространстве тканей или полостях тела. У животных чаще всего встречаются отёки конечностей, подкожные отёки и асцит (жидкость в брюшной полости).</p>
+    <p>Асцит — это накопление жидкости в брюшной полости, проявляющееся увеличением живота. Может быть транссудатом (при гипоальбуминемии, портальной гипертензии) или экссудатом (при воспалении, онкологии).</p>
+
+    <div class="warning-box">
+      <strong>⚠️ Критично</strong>
+      <p>Внезапное увеличение живота или отёки конечностей — признак серьёзного заболевания, требующего обследования.</p>
+    </div>
+
+    <h3>Основные причины отёков</h3>
+    <div class="causes-grid">
+      <div class="cause-group">
+        <h4>Сердечные</h4>
+        <ul>
+          <li>Правожелудочковая сердечная недостаточность</li>
+          <li>Кардиомиопатии (ДКМП, ГКМП)</li>
+          <li>Перикардит</li>
+          <li>Пороки сердца</li>
+          <li>Аритмии</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Почечные</h4>
+        <ul>
+          <li>Хроническая болезнь почек (ХБП)</li>
+          <li>Нефротический синдром</li>
+          <li>Гломерулонефрит</li>
+          <li>Амилоидоз почек</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Печёночные и другие</h4>
+        <ul>
+          <li>Цирроз печени (портальная гипертензия)</li>
+          <li>Гипоальбуминемия (потеря белка)</li>
+          <li>IBD (потеря белка через кишечник)</li>
+          <li>Онкология (лимфома, карциноматоз)</li>
+          <li>Гипотиреоз (микседема)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Диагностический протокол</h3>
+    <div class="diagnosis-list">
+      <ul>
+        <li>Физикальный осмотр: локализация отёков, консистенция, болезненность</li>
+        <li>ЭХО сердца (ЭхоКГ) — оценка функции сердца</li>
+        <li>ЭКГ — выявление аритмий</li>
+        <li>УЗИ брюшной полости (асцит, печень, почки)</li>
+        <li>Биохимия крови (альбумин, креатинин, мочевина, АЛТ)</li>
+        <li>Общий анализ крови (анемия, лейкоцитоз)</li>
+        <li>Анализ мочи (протеинурия)</li>
+        <li>Анализ асцитной жидкости (транссудат vs экссудат)</li>
+        <li>Измерение артериального давления</li>
+      </ul>
+    </div>
+
+    <h3>Связанные заболевания</h3>
+    <div class="related-grid">
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#hbp" class="related-card">
+        <h4>Хроническая болезнь почек</h4>
+        <p>Нефротический синдром с отёками. Протокол IRIS.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#cirkroz" class="related-card">
+        <h4>Цирроз печени</h4>
+        <p>Асцит при портальной гипертензии. Контроль диуретиками.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#ibd" class="related-card">
+        <h4>IBD</h4>
+        <p>Потеря белка через кишечник (протеин-теряющая энтеропатия).</p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <h3>У питомца отёки или увеличился живот?</h3>
+      <p>Запишитесь на приём для диагностики причины отёков и назначения лечения</p>
+      <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+    </div>
+  </section>
+
+  <!-- ХРОНИЧЕСКАЯ РВОТА -->
+  <section class="section" id="rvota">
+    <span class="symptom-icon">🤢</span>
+    <span class="section-label">Симптом</span>
+    <h2>Хроническая рвота</h2>
+    <p>Хроническая рвота — это рвота, повторяющаяся более 2-3 раз в неделю в течение 3 и более недель. В отличие от острой рвоты (отравление, инфекция), хроническая рвота указывает на системное заболевание.</p>
+    <p>Рвота — это защитный рефлекс, но при хроническом течении она приводит к обезвоживанию, потере электролитов, истощению и значительно снижает качество жизни питомца.</p>
+
+    <div class="warning-box">
+      <strong>⚠️ Важно</strong>
+      <p>Хроническая рвота никогда не является нормой. Даже если питомец "вроде бы активен", необходимо обследование. Рвота более 2-3 раз в неделю в течение 3+ недель — признак хронического заболевания.</p>
+    </div>
+
+    <h3>Основные причины хронической рвоты</h3>
+    <div class="causes-grid">
+      <div class="cause-group">
+        <h4>Желудочно-кишечные</h4>
+        <ul>
+          <li>Воспалительное заболевание кишечника (IBD)</li>
+          <li>Хронический панкреатит</li>
+          <li>Хронический гастрит</li>
+          <li>Пищевая непереносимость/аллергия</li>
+          <li>Инородное тело (частичная обструкция)</li>
+          <li>Онкология ЖКТ (лимфома, аденокарцинома)</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Системные</h4>
+        <ul>
+          <li>Хроническая болезнь почек (ХБП)</li>
+          <li>Гипертиреоз (у кошек)</li>
+          <li>Сахарный диабет (кетоацидоз)</li>
+          <li>Печёночная недостаточность</li>
+          <li>Болезнь Аддисона (у собак)</li>
+          <li>Панкреатит</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Другие причины</h4>
+        <ul>
+          <li>Паразитарные инвазии</li>
+          <li>Токсическое воздействие</li>
+          <li>Неврологические заболевания</li>
+          <li>Психогенная рвота</li>
+          <li>Побочные эффекты лекарств</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Диагностический протокол</h3>
+    <div class="diagnosis-list">
+      <ul>
+        <li>Сбор анамнеза: частота рвоты, связь с кормлением, содержимое рвотных масс</li>
+        <li>Общий анализ крови (анемия, лейкоцитоз, эозинофилия)</li>
+        <li>Биохимия крови (креатинин, мочевина, АЛТ, АСТ, глюкоза, кальций)</li>
+        <li>Анализ мочи (удельный вес, глюкоза, кетоны)</li>
+        <li>Тест на Т4 (для кошек старше 7 лет)</li>
+        <li>Тест на специфическую панкреатическую липазу (cPL/fPL)</li>
+        <li>УЗИ брюшной полости (ЖКТ, печень, почки, поджелудочная)</li>
+        <li>Эндоскопия с биопсией (при подозрении на IBD, онкологию)</li>
+        <li>Анализ кала (паразиты, скрытая кровь)</li>
+      </ul>
+    </div>
+
+    <h3>Связанные заболевания</h3>
+    <div class="related-grid">
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#pankreatit" class="related-card">
+        <h4>Панкреатит</h4>
+        <p>80% пациентов с острым панкреатитом полностью восстанавливаются.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#ibd" class="related-card">
+        <h4>IBD</h4>
+        <p>70% пациентов достигают ремиссии. Исключающая диета.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#hbp" class="related-card">
+        <h4>Хроническая болезнь почек</h4>
+        <p>Рвота при уремии. 70% кошек живут 2+ года при лечении.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#gipertireoz" class="related-card">
+        <h4>Гипертиреоз</h4>
+        <p>70% кошек с гипертиреозом имеют рвоту. 90% достигают компенсации.</p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <h3>Ваш питомец часто рвёт?</h3>
+      <p>Запишитесь на приём для диагностики причины хронической рвоты и назначения лечения</p>
+      <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+    </div>
+  </section>
+
+  <!-- ХРОНИЧЕСКАЯ ДИАРЕЯ -->
+  <section class="section" id="diareya">
+    <span class="symptom-icon">💩</span>
+    <span class="section-label">Симптом</span>
+    <h2>Хроническая диарея</h2>
+    <p>Хроническая диарея — это жидкий или полуоформленный стул, сохраняющийся более 3 недель. В отличие от острой диареи (инфекция, отравление), хроническая диарея указывает на системное заболевание ЖКТ или других органов.</p>
+    <p>Хроническая диарея приводит к потере жидкости, электролитов, белка и питательных веществ, что вызывает истощение, обезвоживание и снижение качества жизни.</p>
+
+    <div class="warning-box">
+      <strong>⚠️ Важно</strong>
+      <p>Хроническая диарея никогда не проходит сама. Требуется диагностика и лечение основного заболевания. Диарея более 3 недель — признак хронического заболевания, требующего комплексного обследования.</p>
+    </div>
+
+    <h3>Основные причины хронической диареи</h3>
+    <div class="causes-grid">
+      <div class="cause-group">
+        <h4>Заболевания ЖКТ</h4>
+        <ul>
+          <li>Воспалительное заболевание кишечника (IBD)</li>
+          <li>Пищевая непереносимость/аллергия</li>
+          <li>Хронический панкреатит</li>
+          <li>Экзокринная недостаточность поджелудочной</li>
+          <li>Дисбиоз кишечника</li>
+          <li>Онкология ЖКТ (лимфома)</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Инфекционные</h4>
+        <ul>
+          <li>Паразитарные инвазии (лямблии, кокцидии)</li>
+          <li>Хронические бактериальные инфекции</li>
+          <li>Грибковые инфекции (гистоплазмоз)</li>
+          <li>Вирусные инфекции (FeLV, FIV, FIP)</li>
+        </ul>
+      </div>
+      <div class="cause-group">
+        <h4>Системные</h4>
+        <ul>
+          <li>Гипертиреоз (у кошек)</li>
+          <li>Печёночная недостаточность</li>
+          <li>Почечная недостаточность</li>
+          <li>Болезнь Аддисона (у собак)</li>
+          <li>Лимфангиэктазия</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Диагностический протокол</h3>
+    <div class="diagnosis-list">
+      <ul>
+        <li>Сбор анамнеза: частота стула, консистенция, наличие крови/слизи, связь с кормлением</li>
+        <li>Анализ кала (паразиты, скрытая кровь, фекальная эластаза)</li>
+        <li>Тест на фекальный кальпротектин (маркер воспаления)</li>
+        <li>Общий анализ крови (анемия, эозинофилия, лимфоцитоз)</li>
+        <li>Биохимия крови (альбумин, холестерин, АЛТ, глюкоза)</li>
+        <li>Тест TLI (экзокринная недостаточность поджелудочной)</li>
+        <li>Тест на Т4 (для кошек старше 7 лет)</li>
+        <li>УЗИ брюшной полости (утолщение стенок кишечника, лимфоузлы)</li>
+        <li>Исключающая диета (8-12 недель)</li>
+        <li>Эндоскопия с биопсией (при неэффективности эмпирической терапии)</li>
+      </ul>
+    </div>
+
+    <h3>Связанные заболевания</h3>
+    <div class="related-grid">
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#ibd" class="related-card">
+        <h4>IBD</h4>
+        <p>Самая частая причина хронической диареи. 70% достигают ремиссии.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#pankreatit" class="related-card">
+        <h4>Панкреатит</h4>
+        <p>Хронический панкреатит с стеатореей. 80% восстанавливаются.</p>
+      </a>
+      <a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#gipertireoz" class="related-card">
+        <h4>Гипертиреоз</h4>
+        <p>70% кошек с гипертиреозом имеют диарею. 90% достигают компенсации.</p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <h3>У питомца хроническая диарея?</h3>
+      <p>Запишитесь на приём для диагностики причины хронической диареи и назначения лечения</p>
+      <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>vetminsk.103vet.by · Специализированный терапевтический проект <a href="https://103vet.by/">103vet.by</a></p>
+  <p>© 2026 · Доказательная ветеринарная медицина</p>
+</footer>
+
+</body>
+</html>

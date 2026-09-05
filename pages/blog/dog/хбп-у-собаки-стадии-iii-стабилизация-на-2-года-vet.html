@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ХБП у собаки стадии III: стабилизация на 2+ года | vetminsk.103vet.by</title>
+<meta name="description" content="Кейс: кокер-спаниель 9 лет, ХБП стадии III по IRIS. Инфузионная терапия, диетотерапия, контроль давления и протеинурии. Стабилизация функции почек на 2+ года.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --color-bg-primary: #F5F0E8; --color-bg-secondary: #EDE8DF; --color-bg-card: #FFFFFF; --color-teal: #1A8B8C; --color-teal-dark: #146B6C; --color-teal-light: #2AB0B1; --color-teal-deep: #0F5859; --color-accent: #E76F51; --color-accent-warm: #F4A261; --color-accent-deep: #d45a3d; --color-text-primary: #2C3E50; --color-text-secondary: #5D6D7E; --color-text-light: #FFFFFF; --font-serif: 'Playfair Display', serif; --font-sans: 'Inter', sans-serif; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { font-family: var(--font-sans); background: var(--color-bg-primary); color: var(--color-text-primary); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  a { color: var(--color-teal); text-decoration: none; transition: color 0.3s; }
+  a:hover { color: var(--color-teal-dark); }
+  .home-link { display: block; width: 100%; text-align: center; text-decoration: none; padding: 16px 20px; font-family: var(--font-serif); font-size: 18px; font-weight: 700; color: var(--color-text-light); background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; }
+  .home-link:hover { filter: brightness(1.05); color: var(--color-text-light); }
+  .nav { background: rgba(245, 240, 232, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 20px 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; list-style: none; }
+  .nav-inner a { display: inline-block; background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%); color: var(--color-text-light); font-size: 13px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; padding: 12px 22px; border-radius: 100px; text-decoration: none; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 6px 16px rgba(231, 111, 81, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.15); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+  .nav-inner a:hover { transform: translateY(-3px); color: var(--color-text-light); box-shadow: 0 10px 24px rgba(231, 111, 81, 0.5); filter: brightness(1.08); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .hero { background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); padding: 60px 32px; border-radius: 24px; margin-bottom: 48px; text-align: center; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9); }
+  .hero-label { display: inline-block; background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 12px 28px; border-radius: 100px; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; box-shadow: 0 8px 16px rgba(26, 139, 140, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -2px 4px rgba(0, 0, 0, 0.2); }
+  .hero h1 { font-family: var(--font-serif); font-size: clamp(28px, 5vw, 48px); font-weight: 600; line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; color: var(--color-teal-deep); }
+  .hero h1 em { font-style: italic; color: var(--color-teal); }
+  .hero p { font-size: clamp(15px, 1.8vw, 17px); font-weight: 300; line-height: 1.7; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto 24px; }
+  .hero-result { display: inline-block; font-family: var(--font-serif); font-style: italic; font-size: 16px; color: var(--color-teal); padding: 16px 24px; border-left: 3px solid var(--color-accent); background: var(--color-bg-card); border-radius: 0 16px 16px 0; line-height: 1.5; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); text-align: left; }
+  .section { background: var(--color-bg-card); border-radius: 24px; padding: 48px 40px; margin-bottom: 32px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.9), inset 0 -2px 4px rgba(0, 0, 0, 0.04); transition: transform 0.4s, box-shadow 0.4s; }
+  .section:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(26, 139, 140, 0.12); }
+  .section-label { display: inline-block; background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 100%); color: var(--color-text-light); padding: 8px 20px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(26, 139, 140, 0.25); }
+  .section h2 { font-family: var(--font-serif); font-size: clamp(24px, 3.5vw, 36px); font-weight: 600; line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 16px; color: var(--color-teal-deep); }
+  .section h3 { font-family: var(--font-serif); font-size: 20px; font-weight: 600; margin: 32px 0 16px; color: var(--color-teal-deep); padding-left: 16px; border-left: 3px solid var(--color-accent); }
+  .section p { font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); margin-bottom: 12px; }
+  .patient-card { background: linear-gradient(145deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); border-radius: 20px; padding: 32px; margin: 24px 0; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); border-left: 4px solid var(--color-accent); }
+  .patient-card h4 { font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: var(--color-teal-deep); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .patient-card h4::before { content: '🐕'; font-size: 28px; }
+  .patient-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+  .patient-info-item { background: var(--color-bg-card); padding: 16px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+  .patient-info-label { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 6px; }
+  .patient-info-value { font-family: var(--font-serif); font-size: 17px; font-weight: 600; color: var(--color-teal-deep); }
+  .diagnosis-list { background: var(--color-bg-primary); border-radius: 16px; padding: 24px; margin: 20px 0; }
+  .diagnosis-list ul { list-style: none; }
+  .diagnosis-list li { padding: 14px 0; border-bottom: 1px solid var(--color-bg-secondary); font-size: 14px; line-height: 1.6; color: var(--color-text-primary); display: flex; gap: 12px; align-items: flex-start; }
+  .diagnosis-list li:last-child { border-bottom: none; }
+  .diagnosis-list li::before { content: ''; width: 8px; height: 8px; background: linear-gradient(145deg, var(--color-accent-warm), var(--color-accent)); border-radius: 50%; margin-top: 8px; flex-shrink: 0; box-shadow: 0 2px 6px rgba(231, 111, 81, 0.3); }
+  .diagnosis-list li strong { color: var(--color-teal-deep); }
+  .diagnosis-box { background: linear-gradient(145deg, var(--color-teal-deep) 0%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 28px; border-radius: 20px; margin: 24px 0; box-shadow: 0 8px 24px rgba(15, 88, 89, 0.3); }
+  .diagnosis-box strong { display: block; font-family: var(--font-serif); font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-accent-warm); margin-bottom: 12px; }
+  .diagnosis-box p { color: var(--color-text-light); font-size: 15px; line-height: 1.7; margin: 0; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 28px 0; }
+  .step { background: var(--color-bg-card); border-radius: 20px; padding: 28px 24px; position: relative; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); transition: all 0.4s; border-top: 4px solid var(--color-teal); }
+  .step:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(26, 139, 140, 0.15); }
+  .step-num { font-family: var(--font-serif); font-size: 42px; font-weight: 700; color: var(--color-teal); opacity: 0.25; line-height: 1; margin-bottom: 12px; display: block; }
+  .step h4 { font-family: var(--font-serif); font-size: 17px; font-weight: 600; margin-bottom: 10px; color: var(--color-teal-deep); line-height: 1.4; }
+  .step p { font-size: 13.5px; line-height: 1.7; color: var(--color-text-secondary); margin: 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+  .stat { background: linear-gradient(145deg, var(--color-teal-light) 0%, var(--color-teal) 50%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 24px 20px; border-radius: 20px; text-align: center; box-shadow: 0 8px 24px rgba(26, 139, 140, 0.3); transition: transform 0.4s; }
+  .stat:hover { transform: translateY(-4px); }
+  .stat-num { font-family: var(--font-serif); font-size: 26px; font-weight: 700; display: block; margin-bottom: 8px; line-height: 1.1; }
+  .stat-label { font-size: 12.5px; opacity: 0.92; line-height: 1.5; }
+  .conclusions { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 24px 0; }
+  .conclusion-item { background: var(--color-bg-primary); padding: 20px 24px; border-radius: 16px; border-left: 3px solid var(--color-accent); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+  .conclusion-item h4 { font-family: var(--font-serif); font-size: 15px; font-weight: 600; color: var(--color-teal-deep); margin-bottom: 8px; line-height: 1.4; }
+  .conclusion-item p { font-size: 13.5px; line-height: 1.6; color: var(--color-text-secondary); margin: 0; }
+  .warning-block { background: linear-gradient(145deg, #fff5f0 0%, #ffe8dd 100%); border-left: 4px solid var(--color-accent); padding: 24px 28px; border-radius: 0 16px 16px 0; margin: 28px 0; box-shadow: 0 4px 12px rgba(231, 111, 81, 0.1); }
+  .warning-block strong { display: block; font-family: var(--font-serif); font-size: 16px; color: var(--color-accent-deep); margin-bottom: 10px; }
+  .warning-block p { font-size: 14px; line-height: 1.7; color: var(--color-text-primary); margin: 0; }
+  .cta { background: linear-gradient(145deg, var(--color-teal-deep) 0%, var(--color-teal-dark) 100%); color: var(--color-text-light); padding: 48px 32px; border-radius: 24px; text-align: center; margin: 40px 0; box-shadow: 0 12px 32px rgba(15, 88, 89, 0.3); }
+  .cta h3 { font-family: var(--font-serif); font-size: clamp(22px, 3vw, 30px); font-weight: 600; margin-bottom: 12px; color: var(--color-text-light); line-height: 1.3; }
+  .cta p { font-size: 15px; font-weight: 300; margin-bottom: 24px; opacity: 0.92; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; color: var(--color-text-light); }
+  .btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(145deg, var(--color-accent-warm) 0%, var(--color-accent) 50%, var(--color-accent-deep) 100%); color: var(--color-text-light); padding: 18px 36px; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 100px; box-shadow: 0 8px 24px rgba(231, 111, 81, 0.35); transition: all 0.4s; }
+  .btn:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(231, 111, 81, 0.45); color: var(--color-text-light); }
+  footer { background: var(--color-teal-deep); color: var(--color-text-light); padding: 32px 24px; text-align: center; font-size: 13px; margin-top: 48px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  footer a { color: var(--color-accent-warm); }
+  footer p { opacity: 0.8; margin-bottom: 8px; line-height: 1.5; }
+  @media (max-width: 768px) { .home-link { font-size: 16px; padding: 14px 16px; } .nav { padding: 16px 16px; } .nav-inner { gap: 8px; } .nav-inner a { font-size: 12px; padding: 10px 16px; letter-spacing: 0.5px; } .hero { padding: 40px 20px; border-radius: 20px; } .section { padding: 32px 20px; border-radius: 20px; } .section h2 { font-size: 24px; } .section h3 { font-size: 18px; } .stat-num { font-size: 22px; } .step { padding: 22px 18px; } .step-num { font-size: 36px; } .cta { padding: 36px 20px; border-radius: 20px; } .patient-info { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .home-link { font-size: 15px; padding: 12px 14px; } .container { padding: 24px 16px; } .hero { padding: 32px 16px; } .hero h1 { font-size: 24px; } .section { padding: 24px 16px; } .section h2 { font-size: 22px; } .nav-inner { gap: 6px; } .nav-inner a { font-size: 11px; padding: 9px 13px; letter-spacing: 0.3px; } .steps { grid-template-columns: 1fr; } .stats { grid-template-columns: 1fr 1fr; } .conclusions { grid-template-columns: 1fr; } .patient-info { grid-template-columns: 1fr; } .btn { padding: 16px 28px; font-size: 12px; } }
+</style>
+</head>
+<body>
+
+<a href="/" class="home-link">vetminsk.103vet.by</a>
+
+<nav class="nav">
+  <ul class="nav-inner">
+    <li><a href="/">Главная</a></li>
+    <li><a href="/pages/disease/сахарный-диабет-у-собак-и-кошек-лечение-и-контроль.html#hbp">К разделу</a></li>
+    <li><a href="https://103vet.by/">Записаться</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <section class="hero">
+    <span class="hero-label">Кейс из практики · Нефрология</span>
+    <h1>ХБП у собаки стадии III: <em>стабилизация на 2+ года</em></h1>
+    <p>История пациента: кокер-спаниель 9 лет, хроническая болезнь почек стадии III по IRIS. Интенсивная инфузионная терапия, диетотерапия, контроль давления и протеинурии. Стабилизация функции почек.</p>
+    <span class="hero-result">
+      <strong style="color: var(--color-accent); display: block; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px;">Результат:</strong>
+      Креатинин стабилизирован на 320 мкмоль/л, собака активна, качество жизни высокое через 2+ года после диагноза
+    </span>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Пациент</span>
+    <h2>История обращения</h2>
+
+    <div class="patient-card">
+      <h4>Джесси</h4>
+      <div class="patient-info">
+        <div class="patient-info-item">
+          <div class="patient-info-label">Порода</div>
+          <div class="patient-info-value">Кокер-спаниель</div>
+        </div>
+        <div class="patient-info-item">
+          <div class="patient-info-label">Возраст</div>
+          <div class="patient-info-value">9 лет</div>
+        </div>
+        <div class="patient-info-item">
+          <div class="patient-info-label">Вес</div>
+          <div class="patient-info-value">11.5 кг <span style="font-size: 13px; color: var(--color-text-secondary); font-family: var(--font-sans);">(было 12.8 кг)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p>Владельцы обратились с жалобами на <strong style="color: var(--color-teal-deep);">выраженную жажду и частое мочеиспускание в течение 3 месяцев</strong>. Джесси пила в 4 раза больше нормы, мочилась каждые 2-3 часа, включая ночь. Параллельно — снижение аппетита, потеря веса на 1.3 кг за 3 месяца, периодическая рвота (2-3 раза в неделю, обычно утром).</p>
+
+    <p>Дополнительные симптомы: вялость (раньше гуляла 1 час, теперь устаёт через 15 минут), неприятный запах из пасти (аммиачный), ухудшение качества шерсти. Владельцы отмечали, что Джесси стала "грустной" и "мало двигается".</p>
+
+    <p>При сборе анамнеза выяснилось: Джесси стерилизована в 3 года, питается сухим кормом премиум-класса. Ранее анализы не сдавались, профилактических осмотров не проводилось. Кокер-спаниели — порода риска по наследственным нефропатиям.</p>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Диагностика</span>
+    <h2>Обследование по протоколу IRIS</h2>
+    <p>Комплексная оценка функции почек для определения стадии ХБП и плана лечения</p>
+
+    <div class="diagnosis-list">
+      <ul>
+        <li><strong>Креатинин: 385 мкмоль/л</strong> (референс 44-133 для собак) — стадия III по IRIS (251-440 мкмоль/л)</li>
+        <li><strong>Мочевина: 28 ммоль/л</strong> (референс 2.5-8.3) — значительно повышена (уремия)</li>
+        <li><strong>SDMA: 35 мкг/дл</strong> (норма &lt;14) — значительно повышен</li>
+        <li><strong>Фосфор: 2.8 ммоль/л</strong> (норма 0.8-1.6) — выраженная гиперфосфатемия</li>
+        <li><strong>Кальций: 2.9 ммоль/л</strong> (норма 2.1-2.8) — гиперкальциемия</li>
+        <li><strong>Калий: 3.2 ммоль/л</strong> (норма 3.5-5.5) — гипокалиемия</li>
+        <li><strong>Общий белок: 54 г/л</strong> (норма 54-77) — нижняя граница</li>
+        <li><strong>Альбумин: 24 г/л</strong> (норма 23-40) — нижняя граница</li>
+        <li><strong>Анализ мочи:</strong> удельный вес 1.012 (норма &gt;1.030) — изостенурия, протеинурия +++</li>
+        <li><strong>Соотношение белок/креатинин в моче (UPC): 1.8</strong> (норма &lt;0.2) — выраженная протеинурия</li>
+        <li><strong>Артериальное давление: 185 мм рт.ст.</strong> (норма &lt;140) — тяжёлая гипертензия</li>
+        <li><strong>УЗИ почек:</strong> bilateral уменьшение размеров, повышение эхогенности коркового слоя, потеря кортико-медуллярной дифференциации</li>
+        <li><strong>Общий анализ крови:</strong> нормоцитарная нормохромная анемия (HCT 32%, норма 37-55)</li>
+      </ul>
+    </div>
+
+    <div class="diagnosis-box">
+      <strong>Диагноз по IRIS</strong>
+      <p>Хроническая болезнь почек, стадия III (креатинин 251-440 мкмоль/л). Осложнения: гиперфосфатемия, протеинурия (UPC 1.8), артериальная гипертензия, гипокалиемия, анемия. Прогноз: серьёзный, но при агрессивной терапии возможна стабилизация на 1-2 года.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Лечение</span>
+    <h2>Протокол терапии по IRIS</h2>
+    <p>Агрессивная многокомпонентная терапия для стабилизации функции почек</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h4>Инфузионная терапия (первые 2 недели — стационар)</h4>
+        <p>Внутривенные капельницы: раствор Рингера + 5% глюкоза, 80 мл/кг/сутки (920 мл/сутки для Джесси). Цель: коррекция обезвоживания, форсированный диурез, снижение креатинина. Контроль электролитов каждые 12 часов. Через 5 дней креатинин снизился с 385 до 340 мкмоль/л.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h4>Диетотерапия (постоянно)</h4>
+        <p>Royal Canin Renal (ограничение фосфора 0.4%, белка 24%, натрия &lt;0.3%). Постепенный переход за 10 дней. Кормление 4 раза в день маленькими порциями. Цель: потребление 400 ккал/день. При отказе от корма — добавление подливы Renal или переход на Hill's k/d.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h4>Контроль фосфора (с 1-го дня)</h4>
+        <p>Ипакитин (хитозан + карбонат кальция) 1 г на 5 кг веса 2 раза в день с едой. Цель: фосфор &lt;1.9 ммоль/л (стадия III по IRIS). Через 4 недели фосфор снизился до 2.2 ммоль/л — добавлен альфакальцидол (аналог витамина D) 0.03 мкг/кг.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <h4>Контроль гипертензии (с 1-го дня)</h4>
+        <p>Амлодипин 0.15 мг/кг 1 раз в день (1.7 мг/день). Цель: давление &lt;140 мм рт.ст. Через 2 недели давление снизилось до 155 мм рт.ст., через месяц — до 140 мм рт.ст. Дополнительно: эналаприл 0.5 мг/кг 2 раза в день (ингибитор АПФ, снижает протеинурию).</p>
+      </div>
+      <div class="step">
+        <span class="step-num">05</span>
+        <h4>Подкожные инфузии (с 3-й недели, постоянно)</h4>
+        <p>Физраствор 0.9% по 200 мл 3 раза в неделю. Обучение владельцев технике введения (холка, игла 21G). Цель: поддержание гидратации, снижение креатинина. Через 2 месяца креатинин стабилизировался на 320 мкмоль/л.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">06</span>
+        <h4>Коррекция анемии (с 2-го месяца)</h4>
+        <p>Дарбопоэтин альфа (эритропоэтин) 1 ЕД/кг подкожно 3 раза в неделю. Цель: гематокрит &gt;30%. Через 4 недели HCT повысился с 32% до 36%. Дополнительно: железо (феррум лек) 2 мг/кг/день, витамин B12 250 мкг подкожно 1 раз в неделю.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">07</span>
+        <h4>Долгосрочный мониторинг (месяцы 3-24)</h4>
+        <p>Контроль креатинина, мочевины, фосфора, калия раз в 2 месяца. Артериальное давление раз в 3 месяца. UPC раз в 6 месяцев. Через 6 месяцев: креатинин 320 мкмоль/л (стабилен), фосфор 1.8 ммоль/л, давление 135 мм рт.ст., UPC 1.2 (снижение). Через 12 месяцев: стабильные показатели, Джесси активна.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Результаты</span>
+    <h2>Динамика за 2 года</h2>
+    <p>Объективные показатели стабилизации функции почек</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat-num">385 → 320</span><span class="stat-label">Креатинин, мкмоль/л (стабилизация)</span></div>
+      <div class="stat"><span class="stat-num">2.8 → 1.8</span><span class="stat-label">Фосфор, ммоль/л (целевой уровень)</span></div>
+      <div class="stat"><span class="stat-num">185 → 135</span><span class="stat-label">Артериальное давление, мм рт.ст.</span></div>
+      <div class="stat"><span class="stat-num">1.8 → 1.2</span><span class="stat-label">UPC (протеинурия)</span></div>
+      <div class="stat"><span class="stat-num">32 → 38%</span><span class="stat-label">Гематокрит (анемия компенсирована)</span></div>
+      <div class="stat"><span class="stat-num">2+ года</span><span class="stat-label">Стабильная функция почек, высокое качество жизни</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Выводы</span>
+    <h2>Ключевые факторы успеха</h2>
+
+    <div class="conclusions">
+      <div class="conclusion-item">
+        <h4>Агрессивная инфузионная терапия</h4>
+        <p>При стадии III ХБП внутривенные инфузии в стационаре критически важны для коррекции обезвоживания и снижения креатинина. Без этого этапа последующая терапия неэффективна.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Многокомпонентный подход</h4>
+        <p>Диета + фосфобиндеры + контроль давления + инфузии + эритропоэтин — все компоненты работают синергетически. Пропуск любого элемента снижает эффективность.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Контроль фосфора — приоритет</h4>
+        <p>Гиперфосфатемия ускоряет прогрессирование ХБП. Комбинация диеты + фосфобиндеры + альфакальцидол позволила достичь целевого фосфора &lt;1.9 ммоль/л.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Контроль гипертензии</h4>
+        <p>Давление 185 мм рт.ст. — критически высокое. Амлодипин + эналаприл снизили давление до 135 мм рт.ст. и уменьшили протеинурию на 33%.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Подкожные инфузии дома</h4>
+        <p>Владельцы обучились делать инфузии 3 раза в неделю. Это поддерживает гидратацию и стабилизирует креатинин. Ключевой фактор долгосрочной стабилизации.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Коррекция анемии</h4>
+        <p>Эритропоэтин + железо + B12 повысили гематокрит с 32% до 38%. Джесси стала активной, улучшился аппетит и качество жизни.</p>
+      </div>
+      <div class="conclusion-item">
+        <h4>Регулярный мониторинг</h4>
+        <p>Анализы раз в 2 месяца позволили вовремя корректировать терапию. Стабилизация креатинина на 320 мкмоль/л в течение 2 лет — отличный результат для стадии III.</p>
+      </div>
+    </div>
+
+    <div class="warning-block">
+      <strong>⚠️ Важное предупреждение для владельцев кокер-спаниелей</strong>
+      <p>Кокер-спаниели — порода риска по наследственным нефропатиям. Профилактический скрининг: креатинин, мочевина, анализ мочи, давление раз в год начиная с 7 лет. Ранняя диагностика (стадия I-II) = значительно лучший прогноз.</p>
+      <p style="margin-top: 12px;"><strong>Прогноз:</strong> При сохранении текущего режима терапии Джесси может жить ещё 1-2 года. ХБП стадии III — серьёзное заболевание, но агрессивная терапия позволяет стабилизировать функцию почек на 1-2 года (медиана выживаемости 400+ дней). Джесси превысила медиану — живёт уже 2+ года с высоким качеством жизни.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h3>Похожий случай?</h3>
+    <p>Ваша собака много пьёт и теряет вес? Жажда, частое мочеиспускание, потеря веса — признаки ХБП. Запишитесь на обследование — ранняя диагностика улучшает прогноз.</p>
+    <a href="https://103vet.by/" class="btn">Записаться к терапевту</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>vetminsk.103vet.by · Специализированный терапевтический проект <a href="https://103vet.by/">103vet.by</a></p>
+  <p>© 2026 · Доказательная ветеринарная медицина</p>
+</footer>
+
+</body>
+</html>
