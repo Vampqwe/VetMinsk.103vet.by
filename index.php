@@ -35,6 +35,14 @@
     <link rel="canonical" href="https://vetminsk.103vet.by/">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Иконка сайта (favicon) -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="theme-color" content="#1A8B8C">
+
     <title>Ветеринарный терапевт в Минске: лечение диабета, ХБП, ЖКТ | vetminsk.103vet.by</title>
     <meta name="description" content="Специализированный центр внутренней медицины животных. Диагностика и лечение хронических заболеваний: сахарный диабет, почечная недостаточность (ХБП), панкреатит, болезни печени. Доказательная медицина по протоколам WSAVA/IRIS. Запись через 103vet.by.">
     <meta name="keywords" content="ветеринарный терапевт минск, лечение диабета у собак, ХБП у кошек, панкреатит у животных, эндокринолог ветеринар, нефролог ветеринар, гастроэнтеролог ветеринар, гепатолог ветеринар, телемедицина ветеринар беларусь">
